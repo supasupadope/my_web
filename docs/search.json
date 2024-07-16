@@ -208,5 +208,12 @@
     "title": "homework2",
     "section": "Q4) 1~3번 문제를 해결할 수 있는 하나로 연결된 pandas 구문을 만들어 실행해 보세요. 데이터는 복사본 대신 mpg 원본을 이용하세요.",
     "text": "Q4) 1~3번 문제를 해결할 수 있는 하나로 연결된 pandas 구문을 만들어 실행해 보세요. 데이터는 복사본 대신 mpg 원본을 이용하세요.\n\nimport pandas as pd\n\ndf = pd.read_csv('data/mpg.csv')\n\ndf = df.assign(total = lambda x: x['cty'] + x['hwy'],\n               avg   = lambda x: x['total'] / 2)\n\nmpg.sort_values('avg', ascending = False).head(3)\n\n\n\n\n\n\n\n\nmanufacturer\nmodel\ndispl\nyear\ncyl\ntrans\ndrv\ncty\nhwy\nfl\ncategory\ntotal\navg\n\n\n\n\n221\nvolkswagen\nnew beetle\n1.9\n1999\n4\nmanual(m5)\nf\n35\n44\nd\nsubcompact\n79\n39.5\n\n\n212\nvolkswagen\njetta\n1.9\n1999\n4\nmanual(m5)\nf\n33\n44\nd\ncompact\n77\n38.5\n\n\n222\nvolkswagen\nnew beetle\n1.9\n1999\n4\nauto(l4)\nf\n29\n41\nd\nsubcompact\n70\n35.0"
+  },
+  {
+    "objectID": "homework2.html#q2-자동차-제조-회사에-따라-도시-연비가-어떻게-다른지-알아보려고-합니다.-audi와-toyota-중-어느-자동차-제조-회사의-도시-연비-평균이-더-높은지-알아보세요.",
+    "href": "homework2.html#q2-자동차-제조-회사에-따라-도시-연비가-어떻게-다른지-알아보려고-합니다.-audi와-toyota-중-어느-자동차-제조-회사의-도시-연비-평균이-더-높은지-알아보세요.",
+    "title": "homework2",
+    "section": "Q2 자동차 제조 회사에 따라 도시 연비가 어떻게 다른지 알아보려고 합니다. ’audi’와 ’toyota 중 어느 자동차 제조 회사의 도시 연비 평균이 더 높은지 알아보세요.",
+    "text": "Q2 자동차 제조 회사에 따라 도시 연비가 어떻게 다른지 알아보려고 합니다. ’audi’와 ’toyota 중 어느 자동차 제조 회사의 도시 연비 평균이 더 높은지 알아보세요.\n\naudi = mpg.query(\"manufacturer == 'audi'\")\ntoyota = mpg.query(\"manufacturer == 'toyota'\")\n\nc = audi['cty'].mean()\nd = toyota['cty'].mean()\n\nprint(\"'toyota'의 도시 연비 평균은 'audi'보다 높다 :\" , d &gt; c)\n\n'toyota'의 도시 연비 평균은 'audi'보다 높다 : True"
   }
 ]
