@@ -1,10 +1,16 @@
 ---
 title: "About"
+
+
 jupyter: python3
+toc: false
+about:
+    id: hero_heading
+    template: jolla
+    image: logo.webp
+    links:
+    - icon: github
+      text: Github
+      href: https://github.com/supasupadope
+     
 ---
-
-About this site
-
-```{python}
-1 + 1
-```
