@@ -9,7 +9,7 @@ website:
       - href: index.qmd
         text: Home
       - href: about.qmd
-        text: about
+        text: About
       - href: homework1.qmd
         text: homework1
 format:
