@@ -1,0 +1,102 @@
+---
+title: "homework2"
+jupyter: python3
+---
+
+## 144p
+
+## Q1) 자동차 배기량에 따라 고속도로 연비가 다른지 알아보려고 합니다. 배기량이 4이하인 자동차와 5 이상인 자동차 중 어떤 자동차의 고속도로 연비 평균이 더 높은지 알아보세요.
+
+```{python}
+import pandas as pd
+
+df_raw = pd.read_csv('data/mpg.csv')
+mpg = df_raw.copy()
+
+lowdispl = mpg.query('displ <= 4')
+highdispl = mpg.query('displ >= 5')
+
+a = lowdispl['hwy'].mean()
+b = highdispl['hwy'].mean()
+
+print("배기량이 4이하인 자동차의 고속도로 연비 평균은 배기량이 5 이상인 자동차보다 높다:" , a > b)
+```
+## Q2 자동차 제조 회사에 따라 도시 연비가 어떻게 다른지 알아보려고 합니다. 'audi'와 'toyota
+ 중 어느 자동차 제조 회사의 도시 연비 평균이 더 높은지 알아보세요.
+ 
+```{python}
+audi = mpg.query("manufacturer == 'audi'")
+toyota = mpg.query("manufacturer == 'toyota'")
+
+c = audi['cty'].mean()
+d = toyota['cty'].mean()
+
+print("'toyota'의 도시 연비 평균은 'audi'보다 높다 :" , d > c)
+```
+ 
+## Q3 'chevrolet', 'ford', 'honda' 자동차의 고속도로 연비 평균을 알아보려고 합니다. 세 회사의 데이터를 추출한 다음 hwy 전체 평균을 구해 보세요.  (여러 조건 중 하나 충족하면 추출) 이후 평균, in 사용
+
+```{python}
+hwy_three = mpg.query("manufacturer in ['chevrolet', 'ford', 'honda']")
+avg_hwy = hwy_three['hwy'].mean()
+avg_hwy
+```
+## 153p 
+
+## mpg 데이터를 이용해 분석 문제를 해결해 보세요.
+## Q1 'audi'에서 생산한 자동차 중에 어떤 자동차 모델의 고속도로 연비가 높은지 알아보려고 합니다. 'audi'에서 생산한 자동차 중 hwy가 1~5위에 해당하는 자동차의 데이터를 출력하세요.
+
+```{python}
+import pandas as pd
+
+df_raw = pd.read_csv('data/mpg.csv')
+mpg = df_raw.copy()
+
+a = mpg.query("manufacturer == 'audi'")
+b = a.sort_values('hwy', ascending = False)
+b.head(5)
+
+```
+
+## 158p
+
+## mpg 데이터를 이용해 분석 문제를 해결해 보세요.
+## Q1) mpg 데이터 복사본을 만들고, cty와 hwy를 더한 '합산 연비 변수'를 출력하세요.
+
+```{python}
+import pandas as pd
+
+df_raw = pd.read_csv('data/mpg.csv')
+mpg = df_raw.copy()
+
+mpg = mpg.assign(total = mpg['cty'] + mpg['hwy'])
+mpg
+```
+
+## Q2) 앞에서 만든 '합산 연비 변수'를 2로 나눠 '평균 연비 변수를 추가하세요.
+
+```{python}
+mpg = mpg.assign(avg = mpg["total"] / 2)
+mpg
+```
+
+## Q3) '평균 연비 변수'가 가장 높은 자동차 3종의 데이터를 출력하세요.
+
+```{python}
+a = mpg.sort_values('avg', ascending = False)
+a.head(3)
+
+```
+## Q4) 1~3번 문제를 해결할 수 있는 하나로 연결된 pandas 구문을 만들어 실행해 보세요. 데이터는 복사본 대신 mpg 원본을 이용하세요.
+```{python}
+import pandas as pd
+
+df = pd.read_csv('data/mpg.csv')
+
+df = df.assign(total = lambda x: x['cty'] + x['hwy'],
+               avg   = lambda x: x['total'] / 2)
+
+mpg.sort_values('avg', ascending = False).head(3)
+
+```
+
