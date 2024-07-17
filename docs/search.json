@@ -213,7 +213,7 @@
     "objectID": "homework2.html#q2-자동차-제조-회사에-따라-도시-연비가-어떻게-다른지-알아보려고-합니다.-audi와-toyota-중-어느-자동차-제조-회사의-도시-연비-평균이-더-높은지-알아보세요.",
     "href": "homework2.html#q2-자동차-제조-회사에-따라-도시-연비가-어떻게-다른지-알아보려고-합니다.-audi와-toyota-중-어느-자동차-제조-회사의-도시-연비-평균이-더-높은지-알아보세요.",
     "title": "homework2",
-    "section": "Q2 자동차 제조 회사에 따라 도시 연비가 어떻게 다른지 알아보려고 합니다. ’audi’와 ’toyota 중 어느 자동차 제조 회사의 도시 연비 평균이 더 높은지 알아보세요.",
-    "text": "Q2 자동차 제조 회사에 따라 도시 연비가 어떻게 다른지 알아보려고 합니다. ’audi’와 ’toyota 중 어느 자동차 제조 회사의 도시 연비 평균이 더 높은지 알아보세요.\n\naudi = mpg.query(\"manufacturer == 'audi'\")\ntoyota = mpg.query(\"manufacturer == 'toyota'\")\n\nc = audi['cty'].mean()\nd = toyota['cty'].mean()\n\nprint(\"'toyota'의 도시 연비 평균은 'audi'보다 높다 :\" , d &gt; c)\n\n'toyota'의 도시 연비 평균은 'audi'보다 높다 : True"
+    "section": "Q2 자동차 제조 회사에 따라 도시 연비가 어떻게 다른지 알아보려고 합니다. ‘audi’와 ’toyota’ 중 어느 자동차 제조 회사의 도시 연비 평균이 더 높은지 알아보세요.",
+    "text": "Q2 자동차 제조 회사에 따라 도시 연비가 어떻게 다른지 알아보려고 합니다. ‘audi’와 ’toyota’ 중 어느 자동차 제조 회사의 도시 연비 평균이 더 높은지 알아보세요.\n\naudi = mpg.query(\"manufacturer == 'audi'\")\ntoyota = mpg.query(\"manufacturer == 'toyota'\")\n\nc = audi['cty'].mean()\nd = toyota['cty'].mean()\n\nprint(\"'toyota'의 도시 연비 평균은 'audi'보다 높다 :\" , d &gt; c)\n\n'toyota'의 도시 연비 평균은 'audi'보다 높다 : True"
   }
 ]
