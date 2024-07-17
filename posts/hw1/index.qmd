@@ -1,5 +1,8 @@
 ---
 title: "homework1"
+author: "정한렬"
+date: "2024-07-12"
+categories: [bigdata]
 jupyter: python3
 ---
 ## 84p
