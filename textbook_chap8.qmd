@@ -1,6 +1,9 @@
 ---
 title: "교과서 챕터 8"
+author: "정한렬"
+date: "2024-07-22"
 format: html
+categories: [bigdata]
 jupyter: python3
 ---
 
