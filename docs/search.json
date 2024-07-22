@@ -390,5 +390,26 @@
     "title": "homework1",
     "section": "’large’와 ’small’에 해당하는 지역이 얼마나 많은지 빈도표와 빈도 막대 그래프를 만들어 확인해 보세요.",
     "text": "’large’와 ’small’에 해당하는 지역이 얼마나 많은지 빈도표와 빈도 막대 그래프를 만들어 확인해 보세요.\n\nplt.figure(figsize=(8, 6))\ncount_test = df_new['size'].value_counts()\ncount_test.plot.bar(rot = 0)\nplt.title('Frequency of Size')\nplt.show()"
+  },
+  {
+    "objectID": "textbook_chap8.html",
+    "href": "textbook_chap8.html",
+    "title": "교과서 챕터 8",
+    "section": "",
+    "text": "데이터 불러오기\n\nimport pandas as pd\nmpg = pd.read_csv('data/mpg.csv')\nmpg\n\n\n\n\n\n\n\n\nmanufacturer\nmodel\ndispl\nyear\ncyl\ntrans\ndrv\ncty\nhwy\nfl\ncategory\n\n\n\n\n0\naudi\na4\n1.8\n1999\n4\nauto(l5)\nf\n18\n29\np\ncompact\n\n\n1\naudi\na4\n1.8\n1999\n4\nmanual(m5)\nf\n21\n29\np\ncompact\n\n\n2\naudi\na4\n2.0\n2008\n4\nmanual(m6)\nf\n20\n31\np\ncompact\n\n\n3\naudi\na4\n2.0\n2008\n4\nauto(av)\nf\n21\n30\np\ncompact\n\n\n4\naudi\na4\n2.8\n1999\n6\nauto(l5)\nf\n16\n26\np\ncompact\n\n\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n\n\n229\nvolkswagen\npassat\n2.0\n2008\n4\nauto(s6)\nf\n19\n28\np\nmidsize\n\n\n230\nvolkswagen\npassat\n2.0\n2008\n4\nmanual(m6)\nf\n21\n29\np\nmidsize\n\n\n231\nvolkswagen\npassat\n2.8\n1999\n6\nauto(l5)\nf\n16\n26\np\nmidsize\n\n\n232\nvolkswagen\npassat\n2.8\n1999\n6\nmanual(m5)\nf\n18\n26\np\nmidsize\n\n\n233\nvolkswagen\npassat\n3.6\n2008\n6\nauto(s6)\nf\n17\n26\np\nmidsize\n\n\n\n\n234 rows × 11 columns\n\n\n\nSeabron 패키지 불러오기\n\nimport seaborn as sns\nimport matplotlib.pyplot as plt\nimport plotly.express as px"
+  },
+  {
+    "objectID": "textbook_chap8.html#빈도-막대-그래프-그리기",
+    "href": "textbook_chap8.html#빈도-막대-그래프-그리기",
+    "title": "교과서 챕터 8",
+    "section": "",
+    "text": "데이터 불러오기\n\nimport pandas as pd\nmpg = pd.read_csv('data/mpg.csv')\nmpg\n\n\n\n\n\n\n\n\nmanufacturer\nmodel\ndispl\nyear\ncyl\ntrans\ndrv\ncty\nhwy\nfl\ncategory\n\n\n\n\n0\naudi\na4\n1.8\n1999\n4\nauto(l5)\nf\n18\n29\np\ncompact\n\n\n1\naudi\na4\n1.8\n1999\n4\nmanual(m5)\nf\n21\n29\np\ncompact\n\n\n2\naudi\na4\n2.0\n2008\n4\nmanual(m6)\nf\n20\n31\np\ncompact\n\n\n3\naudi\na4\n2.0\n2008\n4\nauto(av)\nf\n21\n30\np\ncompact\n\n\n4\naudi\na4\n2.8\n1999\n6\nauto(l5)\nf\n16\n26\np\ncompact\n\n\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n\n\n229\nvolkswagen\npassat\n2.0\n2008\n4\nauto(s6)\nf\n19\n28\np\nmidsize\n\n\n230\nvolkswagen\npassat\n2.0\n2008\n4\nmanual(m6)\nf\n21\n29\np\nmidsize\n\n\n231\nvolkswagen\npassat\n2.8\n1999\n6\nauto(l5)\nf\n16\n26\np\nmidsize\n\n\n232\nvolkswagen\npassat\n2.8\n1999\n6\nmanual(m5)\nf\n18\n26\np\nmidsize\n\n\n233\nvolkswagen\npassat\n3.6\n2008\n6\nauto(s6)\nf\n17\n26\np\nmidsize\n\n\n\n\n234 rows × 11 columns\n\n\n\nSeabron 패키지 불러오기\n\nimport seaborn as sns\nimport matplotlib.pyplot as plt\nimport plotly.express as px"
+  },
+  {
+    "objectID": "textbook_chap8.html#데이터-전처리하기",
+    "href": "textbook_chap8.html#데이터-전처리하기",
+    "title": "교과서 챕터 8",
+    "section": "데이터 전처리하기",
+    "text": "데이터 전처리하기\n\ndf_mpg = mpg.groupby('drv', as_index = False) \\\n            .agg(mean_hwy = ('hwy', 'mean')) \n\n\nscatter() 사용하기\n\nsns.scatterplot(data = mpg, x = 'displ', y = 'hwy', hue = 'drv') \\\n   .set(xlim = [3, 6], ylim = [10, 30])\n\n\n\n\n\n\n\n\n\n\nplotly를 사용한 산점도\n\nplt.clf()\npx.scatter(data_frame = mpg, x = 'cty', y = 'hwy', color = 'drv')\n\n                                                \n\n\n&lt;Figure size 672x480 with 0 Axes&gt;\n\n\n\n\n‘barplot()’ 사용하기\n\nsns.barplot(data=df_mpg.sort_values('mean_hwy'),\n            x = \"drv\", y = \"mean_hwy\", hue = \"drv\")\n\n\n\n\n\n\n\n\n\n\n‘countplot()’ 사용하기\n\nsns.countplot(data = mpg, x = 'drv', hue= 'drv', order = ['4', 'f', 'r'])"
   }
 ]
