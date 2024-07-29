@@ -221,7 +221,7 @@
     "href": "blog.html",
     "title": "my blog",
     "section": "",
-    "text": "homework4\n\n\n\n\n\n\nbigdata\n\n\n\n\n\n\n\n\n\nJul 25, 2024\n\n\n정한렬\n\n\n\n\n\n\n\n\n\n\n\n\nhomework3\n\n\n\n\n\n\nbigdata\n\n\n\n\n\n\n\n\n\nJul 22, 2024\n\n\n정한렬\n\n\n\n\n\n\n\n\n\n\n\n\n교과서 챕터 8\n\n\n\n\n\n\nbigdata\n\n\n\n\n\n\n\n\n\nJul 22, 2024\n\n\n정한렬\n\n\n\n\n\n\n\n\n\n\n\n\nhomework1\n\n\n\n\n\n\nbigdata\n\n\n\n\n\n\n\n\n\nJul 12, 2024\n\n\n정한렬\n\n\n\n\n\n\n\n\n\n\n\n\nhomework2\n\n\n\n\n\n\nbigdata\n\n\n\n\n\n\n\n\n\nJul 12, 2024\n\n\n정한렬\n\n\n\n\n\n\nNo matching items"
+    "text": "homework5\n\n\n\n\n\n\nbigdata\n\n\n\n\n\n\n\n\n\nJul 29, 2024\n\n\n정한렬\n\n\n\n\n\n\n\n\n\n\n\n\nhomework4\n\n\n\n\n\n\nbigdata\n\n\n\n\n\n\n\n\n\nJul 25, 2024\n\n\n정한렬\n\n\n\n\n\n\n\n\n\n\n\n\nhomework3\n\n\n\n\n\n\nbigdata\n\n\n\n\n\n\n\n\n\nJul 22, 2024\n\n\n정한렬\n\n\n\n\n\n\n\n\n\n\n\n\n교과서 챕터 8\n\n\n\n\n\n\nbigdata\n\n\n\n\n\n\n\n\n\nJul 22, 2024\n\n\n정한렬\n\n\n\n\n\n\n\n\n\n\n\n\nhomework1\n\n\n\n\n\n\nbigdata\n\n\n\n\n\n\n\n\n\nJul 12, 2024\n\n\n정한렬\n\n\n\n\n\n\n\n\n\n\n\n\nhomework2\n\n\n\n\n\n\nbigdata\n\n\n\n\n\n\n\n\n\nJul 12, 2024\n\n\n정한렬\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/hw2/index.html#q1-자동차-배기량에-따라-고속도로-연비가-다른지-알아보려고-합니다.-배기량이-4이하인-자동차와-5-이상인-자동차-중-어떤-자동차의-고속도로-연비-평균이-더-높은지-알아보세요.",
@@ -481,5 +481,33 @@
     "title": "homework4",
     "section": "3. LS 빅데이터 스쿨 학생들의 중간고사 점수는 평균이 30이고, 분산이 4인 정규분포를 따른다. 상위 5%에 해당하는 학생의 점수는?",
     "text": "3. LS 빅데이터 스쿨 학생들의 중간고사 점수는 평균이 30이고, 분산이 4인 정규분포를 따른다. 상위 5%에 해당하는 학생의 점수는?\n\nfrom scipy.stats import norm\n\na = norm.ppf(0.95, 30, 2)\nprint(\"상위 5% 학생의 점수는 \" + str(a) + \"입니다\")\n\n상위 5% 학생의 점수는 33.28970725390295입니다"
+  },
+  {
+    "objectID": "posts/hw5/index.html",
+    "href": "posts/hw5/index.html",
+    "title": "homework5",
+    "section": "",
+    "text": "import numpy as np\nimport matplotlib.pyplot as plt\n\ns_2 = []\nk_2 = []\n\nfor i in range(10000):\n    uni = np.random.uniform(3, 7, 20)\n    uni\n    uni_mean = uni.mean()\n    a = sum((uni - uni_mean) ** 2)\n    s = a / (len(uni) - 1) \n    k = a / (len(uni))\n    s_2.append(s)\n    k_2.append(k)\n    \nplt.hist(s_2, color = 'r')\nplt.show()\nplt.clf()\n\n\n\n\n\n\n\n\n&lt;Figure size 672x480 with 0 Axes&gt;\n\n\n\nplt.hist(k_2, color = 'b')\nplt.show()\nplt.clf()\n\n\n\n\n\n\n\n\n&lt;Figure size 672x480 with 0 Axes&gt;\n\n\n\n\n\n\npop_var = ((7 - 3) ** 2) / 12 \n\nplt.axvline(pop_var, color = 'green', linestyle = '--',  linewidth = 3)\nplt.hist(s_2, color = 'r')\nplt.show()\nplt.clf()\n\n\n\n\n\n\n\n\n&lt;Figure size 672x480 with 0 Axes&gt;\n\n\n\nplt.hist(k_2, color = 'b')\nplt.axvline(pop_var, color = 'green', linestyle = '--',  linewidth = 3)\nplt.show()\nplt.clf()\n\n\n\n\n\n\n\n\n&lt;Figure size 672x480 with 0 Axes&gt;\n\n\n\n\n\n\nplt.axvline(pop_var, color = 'green', linestyle = '--',  linewidth = 3)\nplt.hist(s_2, color = 'r')\nplt.show()\nplt.hist(k_2, color = 'b')\nplt.axvline(pop_var, color = 'green', linestyle = '--',  linewidth = 3)\nplt.show()\nplt.clf()\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n&lt;Figure size 672x480 with 0 Axes&gt;\n\n\n빨간색 분포, 즉 n-1로 구한 분산 분포의 평균이 모 분산과 더 잘 맞아 떨어지기 때문에 n-1로 나누는 것이 타당하다다"
+  },
+  {
+    "objectID": "posts/hw5/index.html#n-1로-나눈-것을-s_2-n으로-나눈-것을-k_2로-정의하고-s_2의-분포와-k_2의-분포를-그려주세요-10000개-사용",
+    "href": "posts/hw5/index.html#n-1로-나눈-것을-s_2-n으로-나눈-것을-k_2로-정의하고-s_2의-분포와-k_2의-분포를-그려주세요-10000개-사용",
+    "title": "homework5",
+    "section": "",
+    "text": "import numpy as np\nimport matplotlib.pyplot as plt\n\ns_2 = []\nk_2 = []\n\nfor i in range(10000):\n    uni = np.random.uniform(3, 7, 20)\n    uni\n    uni_mean = uni.mean()\n    a = sum((uni - uni_mean) ** 2)\n    s = a / (len(uni) - 1) \n    k = a / (len(uni))\n    s_2.append(s)\n    k_2.append(k)\n    \nplt.hist(s_2, color = 'r')\nplt.show()\nplt.clf()\n\n\n\n\n\n\n\n\n&lt;Figure size 672x480 with 0 Axes&gt;\n\n\n\nplt.hist(k_2, color = 'b')\nplt.show()\nplt.clf()\n\n\n\n\n\n\n\n\n&lt;Figure size 672x480 with 0 Axes&gt;"
+  },
+  {
+    "objectID": "posts/hw5/index.html#각-분포-그래프에-모분산의-위치에-녹색-막대를-그려주세요.",
+    "href": "posts/hw5/index.html#각-분포-그래프에-모분산의-위치에-녹색-막대를-그려주세요.",
+    "title": "homework5",
+    "section": "",
+    "text": "pop_var = ((7 - 3) ** 2) / 12 \n\nplt.axvline(pop_var, color = 'green', linestyle = '--',  linewidth = 3)\nplt.hist(s_2, color = 'r')\nplt.show()\nplt.clf()\n\n\n\n\n\n\n\n\n&lt;Figure size 672x480 with 0 Axes&gt;\n\n\n\nplt.hist(k_2, color = 'b')\nplt.axvline(pop_var, color = 'green', linestyle = '--',  linewidth = 3)\nplt.show()\nplt.clf()\n\n\n\n\n\n\n\n\n&lt;Figure size 672x480 with 0 Axes&gt;"
+  },
+  {
+    "objectID": "posts/hw5/index.html#결과를-살펴보고-왜-n-1로-나눈-것을-분산을-추정하는-지표로-사용하는-것이-타당한지-써주세요",
+    "href": "posts/hw5/index.html#결과를-살펴보고-왜-n-1로-나눈-것을-분산을-추정하는-지표로-사용하는-것이-타당한지-써주세요",
+    "title": "homework5",
+    "section": "",
+    "text": "plt.axvline(pop_var, color = 'green', linestyle = '--',  linewidth = 3)\nplt.hist(s_2, color = 'r')\nplt.show()\nplt.hist(k_2, color = 'b')\nplt.axvline(pop_var, color = 'green', linestyle = '--',  linewidth = 3)\nplt.show()\nplt.clf()\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n&lt;Figure size 672x480 with 0 Axes&gt;\n\n\n빨간색 분포, 즉 n-1로 구한 분산 분포의 평균이 모 분산과 더 잘 맞아 떨어지기 때문에 n-1로 나누는 것이 타당하다다"
   }
 ]
