@@ -1,0 +1,117 @@
+---
+title: "homework1"
+author: "정한렬"
+date: "2024-07-12"
+categories: [bigdata]
+jupyter: python3
+---
+## 84p
+## 다음 표의 내용을 데이터 프레임으로 만들어 출력해보세요.
+
+```{python}
+import pandas as pd
+
+df = pd.DataFrame({
+    'product': ['사과', '딸기', '수박'],
+    'price': [1800, 1500, 3000],
+    'quantity': [24, 38, 13]
+})
+df
+```
+
+
+## 앞에서 만든 데이터 프레임을 이용해 과일의 가격 평균과  판매량 평균을 구해보세요.
+
+```{python}
+a = sum(df["price"])/3
+b= sum(df["quantity"])/3
+
+print("평균 가격은 " + str(a) +" 이고, 평균 판매량은 " + str(b) + " 입니다")
+```
+
+## 115p
+## mpg 데이터를 불러와 복사본을 만드세요 
+
+```{python}
+import pandas as pd
+
+df_raw = pd.read_csv('data/mpg.csv')
+
+df_new = df_raw.copy()
+df_new
+```
+
+## 복사본 데이터를 이용해 cty는 city로, hwy는 highway로 수정하세요.
+
+```{python}
+df_new = df_new.rename(columns = {'cty' : 'city'})
+df_new = df_new.rename(columns = {'hwy' : 'highway'})
+```
+
+## 데이터 일부를 출력해 변수명이 바뀌었는지 확인해 보세요. 다음과 같은 결과물이 출력되어야 합니다.
+```{python}
+df_new[0:5]
+df_new[['city', 'highway']]
+
+df_new
+```
+
+## 130p
+## midwest.csv를 불러와 데이터의 특징을 파악하세요.
+
+```{python}
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+
+df_raw = pd.read_csv('data/midwest.csv')
+df_new = df_raw.copy()
+df_new.head()
+df_new.tail()
+df_new.shape
+df_new.info()
+df_new.describe()
+df_new
+```
+
+## poptotal 변수를 total로, popasian 변수를 asian으로 수정하세요.
+
+```{python}
+df_new = df_new.rename(columns = {'poptotal' : 'total'})
+df_new = df_new.rename(columns = {'popasian' : 'asian'})
+```
+
+## total, asian 변수를 이용해 '전체 인구 대비 아시아 인구 백분율' 파생변수를 추가하고, 히스토그그램을 만들어 분포를 살펴보세요.
+
+```{python}
+df_new["asian_percentage"] = df_new["asian"] / df_new["total"] * 100
+
+plt.figure(figsize=(8,6))
+df_new["asian_percentage"].plot.hist()
+plt.title("Hist of Asian Percentage")
+plt.show()
+```
+
+
+## 아시아 인구 백분율 전체 평균을 구하고, 평균을 초과하면 'large', 그 외에는 'small'을 부여한 파생변수를 만들어보세요.
+
+```{python}
+df_new["asian_total"] = sum(df_new["asian_percentage"])
+
+mean_m = np.mean(df_new["asian_percentage"])
+
+df_new['size'] = np.where(df_new["asian_percentage"] > mean_m,'large', 'small') 
+
+print(df_new['size'].value_counts())
+```
+
+## 'large'와 'small'에 해당하는 지역이 얼마나 많은지 빈도표와 빈도 막대 그래프를 만들어 확인해 보세요.
+```{python}
+plt.figure(figsize=(8, 6))
+count_test = df_new['size'].value_counts()
+count_test.plot.bar(rot = 0)
+plt.title('Frequency of Size')
+plt.show()
+```
+
+

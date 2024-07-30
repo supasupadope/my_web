@@ -1,0 +1,12 @@
+{
+  "hash": "60182fb17c05127f410c031ce214e067",
+  "result": {
+    "engine": "jupyter",
+    "markdown": "---\ntitle: \"homework4\"\nauthor: \"정한렬\"\ndate: \"2024-07-25\"\ncategories: [bigdata]\njupyter: python3\n---\n\n\n## 1. 정규분포 pdf 값을 계산하는 자신만의 파이썬 함수를 정의하고, 정규분포 mu = 3, sigma = 2 의 pdf를 그릴 것.\n\n::: {#e42470c5 .cell execution_count=1}\n``` {.python .cell-code}\nimport numpy as np\nimport math\nimport matplotlib.pyplot as plt\n\n\ndef nd(x, mu, std):\n    return (1/(std * np.sqrt(2 * math.pi))) * math.exp((-1/2) * ((x - mu)/std)**2) \n\nlist = []\nfor x in np.linspace(-3, 9, 1000):\n    list.append(nd(x,3,2))\n\nplt.plot(np.linspace(-3, 9, 1000), np.array(list))\nplt.show()\n```\n\n::: {.cell-output .cell-output-display}\n![](index_files/figure-html/cell-2-output-1.png){width=587 height=411}\n:::\n:::\n\n\n## 2. 파이썬 scipy 패키지 사용해서 다음과 같은확률을 구하시오.\n\nX ~ N(2, 3^2)\n\n### 1) P(X < 3)\n\n::: {#b0089fe4 .cell execution_count=2}\n``` {.python .cell-code}\nfrom scipy.stats import norm\nnorm.cdf(3, 2, 3)\n```\n\n::: {.cell-output .cell-output-display execution_count=7}\n```\nnp.float64(0.6305586598182363)\n```\n:::\n:::\n\n\n### 2) P(2 < X < 5)\n\n::: {#7be1676a .cell execution_count=3}\n``` {.python .cell-code}\nnorm.cdf(5, 2, 3) - norm.cdf(2, 2, 3)\n```\n\n::: {.cell-output .cell-output-display execution_count=8}\n```\nnp.float64(0.3413447460685429)\n```\n:::\n:::\n\n\n### 3) P(X < 3 or X > 7)\n\n::: {#3de9a127 .cell execution_count=4}\n``` {.python .cell-code}\n1 - (norm.cdf(7, 2, 3) - norm.cdf(3, 2, 3))\n```\n\n::: {.cell-output .cell-output-display execution_count=9}\n```\nnp.float64(0.678349012091051)\n```\n:::\n:::\n\n\n## 3. LS 빅데이터 스쿨 학생들의 중간고사 점수는 평균이 30이고, 분산이 4인 정규분포를 따른다. 상위 5%에 해당하는 학생의 점수는?\n\n::: {#fe0cf8ea .cell execution_count=5}\n``` {.python .cell-code}\nfrom scipy.stats import norm\n\na = norm.ppf(0.95, 30, 2)\nprint(\"상위 5% 학생의 점수는 \" + str(a) + \"입니다\")\n```\n\n::: {.cell-output .cell-output-stdout}\n```\n상위 5% 학생의 점수는 33.28970725390295입니다\n```\n:::\n:::\n\n\n",
+    "supporting": [
+      "index_files"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}
