@@ -221,7 +221,11 @@
     "href": "blog.html",
     "title": "my blog",
     "section": "",
+<<<<<<< HEAD
     "text": "homework6\n\n\n\n\n\n\nbigdata\n\n\n\n\n\n\n\n\n\nJul 30, 2024\n\n\n정한렬\n\n\n\n\n\n\n\n\n\n\n\n\nhomework5\n\n\n\n\n\n\nbigdata\n\n\n\n\n\n\n\n\n\nJul 29, 2024\n\n\n정한렬\n\n\n\n\n\n\n\n\n\n\n\n\nhomework4\n\n\n\n\n\n\nbigdata\n\n\n\n\n\n\n\n\n\nJul 25, 2024\n\n\n정한렬\n\n\n\n\n\n\n\n\n\n\n\n\nhomework3\n\n\n\n\n\n\nbigdata\n\n\n\n\n\n\n\n\n\nJul 22, 2024\n\n\n정한렬\n\n\n\n\n\n\n\n\n\n\n\n\n교과서 챕터 8\n\n\n\n\n\n\nbigdata\n\n\n\n\n\n\n\n\n\nJul 22, 2024\n\n\n정한렬\n\n\n\n\n\n\n\n\n\n\n\n\nhomework1\n\n\n\n\n\n\nbigdata\n\n\n\n\n\n\n\n\n\nJul 12, 2024\n\n\n정한렬\n\n\n\n\n\n\n\n\n\n\n\n\nhomework2\n\n\n\n\n\n\nbigdata\n\n\n\n\n\n\n\n\n\nJul 12, 2024\n\n\n정한렬\n\n\n\n\n\n\nNo matching items"
+=======
+    "text": "homework5\n\n\n\n\n\n\nbigdata\n\n\n\n\n\n\n\n\n\nJul 29, 2024\n\n\n정한렬\n\n\n\n\n\n\n\n\n\n\n\n\nhomework4\n\n\n\n\n\n\nbigdata\n\n\n\n\n\n\n\n\n\nJul 25, 2024\n\n\n정한렬\n\n\n\n\n\n\n\n\n\n\n\n\nhomework3\n\n\n\n\n\n\nbigdata\n\n\n\n\n\n\n\n\n\nJul 22, 2024\n\n\n정한렬\n\n\n\n\n\n\n\n\n\n\n\n\n교과서 챕터 8\n\n\n\n\n\n\nbigdata\n\n\n\n\n\n\n\n\n\nJul 22, 2024\n\n\n정한렬\n\n\n\n\n\n\n\n\n\n\n\n\nhomework1\n\n\n\n\n\n\nbigdata\n\n\n\n\n\n\n\n\n\nJul 12, 2024\n\n\n정한렬\n\n\n\n\n\n\n\n\n\n\n\n\nhomework2\n\n\n\n\n\n\nbigdata\n\n\n\n\n\n\n\n\n\nJul 12, 2024\n\n\n정한렬\n\n\n\n\n\n\nNo matching items"
+>>>>>>> ae61720e3b43e1d2f1348fd348716bfef8931c36
   },
   {
     "objectID": "posts/hw2/index.html#q1-자동차-배기량에-따라-고속도로-연비가-다른지-알아보려고-합니다.-배기량이-4이하인-자동차와-5-이상인-자동차-중-어떤-자동차의-고속도로-연비-평균이-더-높은지-알아보세요.",
@@ -509,6 +513,7 @@
     "title": "homework5",
     "section": "",
     "text": "plt.axvline(pop_var, color = 'green', linestyle = '--',  linewidth = 3)\nsns.histplot(s_2, color = 'r')\nplt.show()\nsns.histplot(k_2, color = 'b')\nplt.axvline(pop_var, color = 'green', linestyle = '--',  linewidth = 3)\nplt.show()\nplt.clf()\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n&lt;Figure size 672x480 with 0 Axes&gt;\n\n\n빨간색 분포, 즉 n-1로 구한 분산 분포의 평균이 모 분산과 더 잘 맞아 떨어지기 때문에 n-1로 나누는 것이 타당하다다"
+<<<<<<< HEAD
   },
   {
     "objectID": "posts/hw6/index.html",
@@ -523,5 +528,7 @@
     "title": "homework6",
     "section": "",
     "text": "#!pip install pyreadstat\nimport pandas as pd\nimport numpy as np\nimport seaborn as sns\nfrom scipy.stats import norm\nimport matplotlib.pyplot as plt\n\n\nraw_welfare = pd.read_spss(('data/Koweps_hpwc14_2019_beta2.sav'))\nraw_welfare\n\nwelfare = raw_welfare.copy()\n\nwelfare = welfare.rename(\n    columns = {'h14_g3'     : 'sex',\n               'h14_g4'     : 'birth',\n               'h14_g10'    : 'marriage_type',\n               'h14_g11'    : 'religion',\n               'p1402_8aq1' : 'income',\n               'h14_eco9'   : 'code_job',\n               'h14_reg7'   : 'code_region'})\n               \nwelfare['sex'] = np.where(welfare['sex'] == 1, 'male', 'female')\nwelfare['sex'].value_counts()\n\nsex\nfemale    7913\nmale      6505\nName: count, dtype: int64\n\n\n\nwelfare['income'].describe()\nwelfare['income'].isna().sum()\n\nsex_income = welfare.dropna(subset = 'income') \\\n                    .groupby('sex', as_index = False) \\\n                    .agg(mean_income = ('income', 'mean'),\n                         var_income = (\"income\",'var'),\n                         len_income = (\"income\",\"count\"))\n                         \nsex_income[\"left_ci\"] = sex_income[\"mean_income\"]- (norm.ppf(0.975, 0, 1) * np.sqrt(sex_income[\"var_income\"]/(sex_income[\"len_income\"])))\n\nsex_income[\"right_ci\"] = sex_income[\"mean_income\"] + (norm.ppf(0.975, 0, 1) * np.sqrt(sex_income[\"var_income\"]/(sex_income[\"len_income\"])))\n\nsex_income[\"left_ci\"]\nsex_income[\"right_ci\"]\n\nsns.barplot(data = sex_income, x = 'sex', y = 'mean_income', hue = 'sex')\n\nplt.vlines(x=0, ymin=sex_income['left_ci'][0], ymax=sex_income['right_ci'][0], color='black', linewidth=4)\nplt.vlines(x=1, ymin=sex_income['left_ci'][1], ymax=sex_income['right_ci'][1], color='black', linewidth=4)\nplt.show()\nplt.clf()\n\n\n\n\n\n\n\n\n&lt;Figure size 672x480 with 0 Axes&gt;"
+=======
+>>>>>>> ae61720e3b43e1d2f1348fd348716bfef8931c36
   }
 ]
