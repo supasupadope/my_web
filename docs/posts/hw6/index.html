@@ -196,7 +196,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <section id="챕터-9-2-설문조사-그래프에서-각-성별-95-신뢰구간-계산후-그리기-norm.ppf-사용해서-그릴-것.-모분산은-표본-분산을-사용해서-추정-위-아래-수직-막대기로-표시-아래-그림-참조" class="level2">
 <h2 class="anchored" data-anchor-id="챕터-9-2-설문조사-그래프에서-각-성별-95-신뢰구간-계산후-그리기-norm.ppf-사용해서-그릴-것.-모분산은-표본-분산을-사용해서-추정-위-아래-수직-막대기로-표시-아래-그림-참조">챕터 9-2 설문조사 그래프에서 각 성별 95% 신뢰구간 계산후 그리기 norm.ppf() 사용해서 그릴 것. 모분산은 표본 분산을 사용해서 추정, 위 아래 수직 막대기로 표시 (아래 그림 참조)</h2>
-<div id="bbc5ba44" class="cell" data-execution_count="1">
+<div id="33385a08" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">#!pip install pyreadstat</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
@@ -228,7 +228,7 @@ male      6505
 Name: count, dtype: int64</code></pre>
 </div>
 </div>
-<div id="8a6fd482" class="cell" data-execution_count="2">
+<div id="5babee37" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>welfare[<span class="st">'income'</span>].describe()</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>welfare[<span class="st">'income'</span>].isna().<span class="bu">sum</span>()</span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
