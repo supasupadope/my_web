@@ -10,13 +10,12 @@ website:
         text: Home
       - href: about.qmd
         text: About
-      - href: blog.qmd
+      - href: posts/index.qmd
         text: Blog
         
 format:
   html:
-    theme: cosmo
-    css: styles.css
+    theme: cosmos
     toc: true
 
 

@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="정한렬">
-<meta name="dcterms.date" content="2024-07-25">
+<meta name="dcterms.date" content="2024-08-08">
 
-<title>homework4 – Go_Younha</title>
+<title>map – Go_Younha</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -147,7 +147,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">homework4</h1>
+      <h1 class="title">map</h1>
                                 <div class="quarto-categories">
                 <div class="quarto-category">bigdata</div>
               </div>
@@ -167,7 +167,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">July 25, 2024</p>
+        <p class="date">August 8, 2024</p>
       </div>
     </div>
     
@@ -183,14 +183,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#정규분포-pdf-값을-계산하는-자신만의-파이썬-함수를-정의하고-정규분포-mu-3-sigma-2-의-pdf를-그릴-것." id="toc-정규분포-pdf-값을-계산하는-자신만의-파이썬-함수를-정의하고-정규분포-mu-3-sigma-2-의-pdf를-그릴-것." class="nav-link active" data-scroll-target="#정규분포-pdf-값을-계산하는-자신만의-파이썬-함수를-정의하고-정규분포-mu-3-sigma-2-의-pdf를-그릴-것.">1. 정규분포 pdf 값을 계산하는 자신만의 파이썬 함수를 정의하고, 정규분포 mu = 3, sigma = 2 의 pdf를 그릴 것.</a></li>
-  <li><a href="#파이썬-scipy-패키지-사용해서-다음과-같은확률을-구하시오." id="toc-파이썬-scipy-패키지-사용해서-다음과-같은확률을-구하시오." class="nav-link" data-scroll-target="#파이썬-scipy-패키지-사용해서-다음과-같은확률을-구하시오.">2. 파이썬 scipy 패키지 사용해서 다음과 같은확률을 구하시오.</a>
-  <ul class="collapse">
-  <li><a href="#px-3" id="toc-px-3" class="nav-link" data-scroll-target="#px-3">1) P(X &lt; 3)</a></li>
-  <li><a href="#p2-x-5" id="toc-p2-x-5" class="nav-link" data-scroll-target="#p2-x-5">2) P(2 &lt; X &lt; 5)</a></li>
-  <li><a href="#px-3-or-x-7" id="toc-px-3-or-x-7" class="nav-link" data-scroll-target="#px-3-or-x-7">3) P(X &lt; 3 or X &gt; 7)</a></li>
-  </ul></li>
-  <li><a href="#ls-빅데이터-스쿨-학생들의-중간고사-점수는-평균이-30이고-분산이-4인-정규분포를-따른다.-상위-5에-해당하는-학생의-점수는" id="toc-ls-빅데이터-스쿨-학생들의-중간고사-점수는-평균이-30이고-분산이-4인-정규분포를-따른다.-상위-5에-해당하는-학생의-점수는" class="nav-link" data-scroll-target="#ls-빅데이터-스쿨-학생들의-중간고사-점수는-평균이-30이고-분산이-4인-정규분포를-따른다.-상위-5에-해당하는-학생의-점수는">3. LS 빅데이터 스쿨 학생들의 중간고사 점수는 평균이 30이고, 분산이 4인 정규분포를 따른다. 상위 5%에 해당하는 학생의 점수는?</a></li>
+  <li><a href="#html-파일-포함을-위한-라이브러리-로드" id="toc-html-파일-포함을-위한-라이브러리-로드" class="nav-link active" data-scroll-target="#html-파일-포함을-위한-라이브러리-로드">HTML 파일 포함을 위한 라이브러리 로드</a></li>
   </ul>
 </nav>
     </div>
@@ -201,75 +194,36 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 
-<section id="정규분포-pdf-값을-계산하는-자신만의-파이썬-함수를-정의하고-정규분포-mu-3-sigma-2-의-pdf를-그릴-것." class="level2">
-<h2 class="anchored" data-anchor-id="정규분포-pdf-값을-계산하는-자신만의-파이썬-함수를-정의하고-정규분포-mu-3-sigma-2-의-pdf를-그릴-것.">1. 정규분포 pdf 값을 계산하는 자신만의 파이썬 함수를 정의하고, 정규분포 mu = 3, sigma = 2 의 pdf를 그릴 것.</h2>
-<div id="5ac7777a" class="cell" data-execution_count="1">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> math</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> nd(x, mu, std):</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> (<span class="dv">1</span><span class="op">/</span>(std <span class="op">*</span> np.sqrt(<span class="dv">2</span> <span class="op">*</span> math.pi))) <span class="op">*</span> math.exp((<span class="op">-</span><span class="dv">1</span><span class="op">/</span><span class="dv">2</span>) <span class="op">*</span> ((x <span class="op">-</span> mu)<span class="op">/</span>std)<span class="op">**</span><span class="dv">2</span>) </span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="bu">list</span> <span class="op">=</span> []</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> x <span class="kw">in</span> np.linspace(<span class="op">-</span><span class="dv">3</span>, <span class="dv">9</span>, <span class="dv">1000</span>):</span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>    <span class="bu">list</span>.append(nd(x,<span class="dv">3</span>,<span class="dv">2</span>))</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>plt.plot(np.linspace(<span class="op">-</span><span class="dv">3</span>, <span class="dv">9</span>, <span class="dv">1000</span>), np.array(<span class="bu">list</span>))</span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="index_files/figure-html/cell-2-output-1.png" width="587" height="411" class="figure-img"></p>
-</figure>
+<div id="80af68d8" class="cell" data-execution_count="1">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> folium</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># 데이터 읽기</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>house_pop <span class="op">=</span> pd.read_csv(<span class="st">'data/houseprice-with-lonlat.csv'</span>)</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co"># 필요한 열 선택</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>house_pop <span class="op">=</span> house_pop.iloc[:, <span class="dv">72</span>:<span class="dv">75</span>]</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co"># 지도 중심 설정</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>center_x <span class="op">=</span> house_pop[<span class="st">'Longitude'</span>].mean()</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>center_y <span class="op">=</span> house_pop[<span class="st">'Latitude'</span>].mean()</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="co"># 지도 생성</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>my_map <span class="op">=</span> folium.Map(location<span class="op">=</span>[center_y, center_x], zoom_start<span class="op">=</span><span class="dv">12</span>, tiles<span class="op">=</span><span class="st">'cartodbpositron'</span>)</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="co"># 점 추가</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(house_pop)):</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>    folium.Marker([house_pop[<span class="st">'Latitude'</span>][i], house_pop[<span class="st">'Longitude'</span>][i]], popup<span class="op">=</span><span class="st">'AMES'</span>).add_to(my_map)</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="co"># 지도 저장</span></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>my_map.save(<span class="st">'map_seoul3.html'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-</div>
-</div>
-</section>
-<section id="파이썬-scipy-패키지-사용해서-다음과-같은확률을-구하시오." class="level2">
-<h2 class="anchored" data-anchor-id="파이썬-scipy-패키지-사용해서-다음과-같은확률을-구하시오.">2. 파이썬 scipy 패키지 사용해서 다음과 같은확률을 구하시오.</h2>
-<p>X ~ N(2, 3^2)</p>
-<section id="px-3" class="level3">
-<h3 class="anchored" data-anchor-id="px-3">1) P(X &lt; 3)</h3>
-<div id="31f83fe3" class="cell" data-execution_count="2">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy.stats <span class="im">import</span> norm</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>norm.cdf(<span class="dv">3</span>, <span class="dv">2</span>, <span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="2">
-<pre><code>np.float64(0.6305586598182363)</code></pre>
-</div>
-</div>
-</section>
-<section id="p2-x-5" class="level3">
-<h3 class="anchored" data-anchor-id="p2-x-5">2) P(2 &lt; X &lt; 5)</h3>
-<div id="23143d6a" class="cell" data-execution_count="3">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>norm.cdf(<span class="dv">5</span>, <span class="dv">2</span>, <span class="dv">3</span>) <span class="op">-</span> norm.cdf(<span class="dv">2</span>, <span class="dv">2</span>, <span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="3">
-<pre><code>np.float64(0.3413447460685429)</code></pre>
-</div>
-</div>
-</section>
-<section id="px-3-or-x-7" class="level3">
-<h3 class="anchored" data-anchor-id="px-3-or-x-7">3) P(X &lt; 3 or X &gt; 7)</h3>
-<div id="ffb66572" class="cell" data-execution_count="4">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="op">-</span> (norm.cdf(<span class="dv">7</span>, <span class="dv">2</span>, <span class="dv">3</span>) <span class="op">-</span> norm.cdf(<span class="dv">3</span>, <span class="dv">2</span>, <span class="dv">3</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="4">
-<pre><code>np.float64(0.678349012091051)</code></pre>
-</div>
-</div>
-</section>
-</section>
-<section id="ls-빅데이터-스쿨-학생들의-중간고사-점수는-평균이-30이고-분산이-4인-정규분포를-따른다.-상위-5에-해당하는-학생의-점수는" class="level2">
-<h2 class="anchored" data-anchor-id="ls-빅데이터-스쿨-학생들의-중간고사-점수는-평균이-30이고-분산이-4인-정규분포를-따른다.-상위-5에-해당하는-학생의-점수는">3. LS 빅데이터 스쿨 학생들의 중간고사 점수는 평균이 30이고, 분산이 4인 정규분포를 따른다. 상위 5%에 해당하는 학생의 점수는?</h2>
-<div id="d490e67c" class="cell" data-execution_count="5">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy.stats <span class="im">import</span> norm</span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>a <span class="op">=</span> norm.ppf(<span class="fl">0.95</span>, <span class="dv">30</span>, <span class="dv">2</span>)</span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"상위 5% 학생의 점수는 "</span> <span class="op">+</span> <span class="bu">str</span>(a) <span class="op">+</span> <span class="st">"입니다"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>상위 5% 학생의 점수는 33.28970725390295입니다</code></pre>
-</div>
-</div>
+<section id="html-파일-포함을-위한-라이브러리-로드" class="level1">
+<h1>HTML 파일 포함을 위한 라이브러리 로드</h1>
+<p>library(shiny)</p>
+<p>ui &lt;- fluidPage( tags$iframe(src = “posts/map/map_seoul3.html”, width = “100%”, height = “600px”) )</p>
+<p>server &lt;- function(input, output, session) {}</p>
+<p>shinyApp(ui, server)</p>
 
 
 </section>
