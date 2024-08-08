@@ -78,9 +78,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-title','listing-author','listing-date','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -128,7 +128,6 @@ window.Quarto = {
 };
 </script>
 
-<link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -173,7 +172,7 @@ window.Quarto = {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(10)</span></div><div class="category" data-category="bigdata">bigdata <span class="quarto-category-count">(9)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(9)</span></div><div class="category" data-category="bigdata">bigdata <span class="quarto-category-count">(8)</span></div></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -200,85 +199,45 @@ window.Quarto = {
 
 
 
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-file-modified-sort="1723077518328" data-listing-reading-time-sort="1" data-listing-word-count-sort="2">
-<div class="thumbnail">
-<p><a href="./posts/index.html" class="no-external"></a></p><a href="./posts/index.html" class="no-external">
-<p class="card-img-top"><img src="posts\hw6\index_files\figure-html\cell-3-output-1.png"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./posts/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/index.html" class="no-external">Recent posts</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./posts/index.html" class="no-external">
+<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1723077518328" data-listing-reading-time-sort="1" data-listing-word-count-sort="2">
+<a href="./posts/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img src="posts\hw6\index_files\figure-html\cell-3-output-1.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Recent posts
+</h5>
+<div class="card-text listing-description">
 
-</a>
+
+
 </div>
-</div>
-<div class="metadata">
-<p><a href="./posts/index.html" class="no-external"></a></p><a href="./posts/index.html" class="no-external">
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="bigdata" data-listing-date-sort="1723042800000" data-listing-file-modified-sort="1723077253521" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="64">
-<div class="thumbnail">
-<p><a href="./posts/map/index.html" class="no-external"></a></p><a href="./posts/map/index.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./posts/map/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/map/index.html" class="no-external">map</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/map/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('bigdata'); return false;">
-bigdata
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/map/index.html" class="no-external">library(shiny)</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/map/index.html" class="no-external">
-<div class="listing-date">
-Aug 8, 2024
-</div>
+<div class="card-attribution card-text-small start">
 <div class="listing-author">
-정한렬
+
+</div>
+</div>
+</div>
 </div>
 </a>
 </div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="bigdata" data-listing-date-sort="1722783600000" data-listing-file-modified-sort="1722860424449" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="145">
-<div class="thumbnail">
-<p><a href="./posts/hw7/index.html" class="no-external"></a></p><a href="./posts/hw7/index.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./posts/hw7/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/hw7/index.html" class="no-external">homework7</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/hw7/index.html" class="no-external"></a>
-</div>
+<div class="g-col-1" data-index="1" data-categories="bigdata" data-listing-date-sort="1722783600000" data-listing-file-modified-sort="1722860424449" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="145">
+<a href="./posts/hw7/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+homework7
+</h5>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('bigdata'); return false;">
 bigdata
 </div>
 </div>
-<div class="listing-description">
-<a href="./posts/hw7/index.html" class="no-external">
+<div class="card-text listing-description">
+
 
 <section id="대립가설-22년-개발된-슬통-자동차의-신형-모델의-에너지-소비-효율은-16.0-미만이다." class="level2">
 
@@ -286,40 +245,35 @@ bigdata
 <section id="영가설-22년-개발된-슬통-자동차의-신형-모델의-에너지-소비-효율은-16.0-이상이다." class="level2">
 
 </section>
-</a>
+
 </div>
-</div>
-<div class="metadata">
-<a href="./posts/hw7/index.html" class="no-external">
-<div class="listing-date">
-Aug 5, 2024
-</div>
+<div class="card-attribution card-text-small justify">
 <div class="listing-author">
 정한렬
 </div>
+<div class="listing-date">
+Aug 5, 2024
+</div>
+</div>
+</div>
+</div>
 </a>
 </div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-categories="bigdata" data-listing-date-sort="1722265200000" data-listing-file-modified-sort="1722345181137" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="338">
-<div class="thumbnail">
-<p><a href="./posts/hw6/index.html" class="no-external"></a></p><a href="./posts/hw6/index.html" class="no-external">
-<p class="card-img-top"><img src="posts\hw6\index_files\figure-html\cell-3-output-1.png"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./posts/hw6/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/hw6/index.html" class="no-external">homework6</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/hw6/index.html" class="no-external"></a>
-</div>
+<div class="g-col-1" data-index="2" data-categories="bigdata" data-listing-date-sort="1722265200000" data-listing-file-modified-sort="1722345181137" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="338">
+<a href="./posts/hw6/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img src="posts\hw6\index_files\figure-html\cell-3-output-1.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+homework6
+</h5>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('bigdata'); return false;">
 bigdata
 </div>
 </div>
-<div class="listing-description">
-<a href="./posts/hw6/index.html" class="no-external">
+<div class="card-text listing-description">
+
 
 <div id="24328a70" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><span class="co">#!pip install pyreadstat</span></span>
@@ -330,219 +284,189 @@ bigdata
 <span id="cb1-6"><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
 <span id="cb1-7"></span>
 <span id="cb1-8"></span>
-<span id="cb1-9">raw_welfare <span class="op">=</span> pd.read_…<span class="st"></span></span><span id="cb1-10"></span><span id="cb1-11"></span><span id="cb1-12"><span class="op"></span></span><span id="cb1-13"></span><span id="cb1-14"><span class="op"></span></span><span id="cb1-15"><span class="op"></span><span class="st"></span><span class="st"></span></span><span id="cb1-16"><span class="st"></span><span class="st"></span></span><span id="cb1-17"><span class="st"></span><span class="st"></span></span><span id="cb1-18"><span class="st"></span><span class="st"></span></span><span id="cb1-19"><span class="st"></span><span class="st"></span></span><span id="cb1-20"><span class="st"></span><span class="st"></span></span><span id="cb1-21"><span class="st"></span><span class="st"></span></span><span id="cb1-22"></span><span id="cb1-23"><span class="st"></span><span class="op"></span><span class="st"></span><span class="op"></span><span class="dv"></span><span class="st"></span><span class="st"></span></span><span id="cb1-24"><span class="st"></span></span></code></pre></div><div class="cell-output cell-output-display" data-execution_count="1"><pre><code></code></pre></div></div><div id="0be8c315" class="cell" data-execution_count="2"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><span class="st"></span></span><span id="cb3-2"><span class="st"></span><span class="bu"></span></span><span id="cb3-3"></span><span id="cb3-4"><span class="op"></span><span class="op"></span><span class="st"></span><span class="op"></span></span><span id="cb3-5"><span class="st"></span><span class="op"></span><span class="va"></span><span class="op"></span></span><span id="cb3-6"><span class="op"></span><span class="st"></span><span class="st"></span></span><span id="cb3-7"><span class="op"></span><span class="st"></span><span class="st"></span></span><span id="cb3-8"><span class="op"></span><span class="st"></span><span class="st"></span></span><span id="cb3-9"></span><span id="cb3-10"><span class="st"></span><span class="op"></span><span class="st"></span><span class="op"></span><span class="fl"></span><span class="dv"></span><span class="dv"></span><span class="op"></span><span class="st"></span><span class="op"></span><span class="st"></span></span><span id="cb3-11"></span><span id="cb3-12"><span class="st"></span><span class="op"></span><span class="st"></span><span class="op"></span><span class="fl"></span><span class="dv"></span><span class="dv"></span><span class="op"></span><span class="st"></span><span class="op"></span><span class="st"></span></span><span id="cb3-13"></span><span id="cb3-14"><span class="st"></span></span><span id="cb3-15"><span class="st"></span></span><span id="cb3-16"></span><span id="cb3-17"><span class="op"></span><span class="op"></span><span class="st"></span><span class="op"></span><span class="st"></span><span class="op"></span><span class="st"></span></span><span id="cb3-18"></span><span id="cb3-19"><span class="op"></span><span class="dv"></span><span class="op"></span><span class="st"></span><span class="dv"></span><span class="op"></span><span class="st"></span><span class="dv"></span><span class="op"></span><span class="st"></span><span class="op"></span><span class="dv"></span></span><span id="cb3-20"><span class="op"></span><span class="dv"></span><span class="op"></span><span class="st"></span><span class="dv"></span><span class="op"></span><span class="st"></span><span class="dv"></span><span class="op"></span><span class="st"></span><span class="op"></span><span class="dv"></span></span><span id="cb3-21"></span><span id="cb3-22"></span></code></pre></div><div class="cell-output cell-output-display"><div><figure class="figure"><p></p></figure></div></div><div class="cell-output cell-output-display"><pre><code></code></pre></div></div></a>
+<span id="cb1-9">raw_welfare <span class="op">=</span> pd.read_…<span class="st"></span></span><span id="cb1-10"></span><span id="cb1-11"></span><span id="cb1-12"><span class="op"></span></span><span id="cb1-13"></span><span id="cb1-14"><span class="op"></span></span><span id="cb1-15"><span class="op"></span><span class="st"></span><span class="st"></span></span><span id="cb1-16"><span class="st"></span><span class="st"></span></span><span id="cb1-17"><span class="st"></span><span class="st"></span></span><span id="cb1-18"><span class="st"></span><span class="st"></span></span><span id="cb1-19"><span class="st"></span><span class="st"></span></span><span id="cb1-20"><span class="st"></span><span class="st"></span></span><span id="cb1-21"><span class="st"></span><span class="st"></span></span><span id="cb1-22"></span><span id="cb1-23"><span class="st"></span><span class="op"></span><span class="st"></span><span class="op"></span><span class="dv"></span><span class="st"></span><span class="st"></span></span><span id="cb1-24"><span class="st"></span></span></code></pre></div><div class="cell-output cell-output-display" data-execution_count="1"><pre><code></code></pre></div></div><div id="0be8c315" class="cell" data-execution_count="2"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><span class="st"></span></span><span id="cb3-2"><span class="st"></span><span class="bu"></span></span><span id="cb3-3"></span><span id="cb3-4"><span class="op"></span><span class="op"></span><span class="st"></span><span class="op"></span></span><span id="cb3-5"><span class="st"></span><span class="op"></span><span class="va"></span><span class="op"></span></span><span id="cb3-6"><span class="op"></span><span class="st"></span><span class="st"></span></span><span id="cb3-7"><span class="op"></span><span class="st"></span><span class="st"></span></span><span id="cb3-8"><span class="op"></span><span class="st"></span><span class="st"></span></span><span id="cb3-9"></span><span id="cb3-10"><span class="st"></span><span class="op"></span><span class="st"></span><span class="op"></span><span class="fl"></span><span class="dv"></span><span class="dv"></span><span class="op"></span><span class="st"></span><span class="op"></span><span class="st"></span></span><span id="cb3-11"></span><span id="cb3-12"><span class="st"></span><span class="op"></span><span class="st"></span><span class="op"></span><span class="fl"></span><span class="dv"></span><span class="dv"></span><span class="op"></span><span class="st"></span><span class="op"></span><span class="st"></span></span><span id="cb3-13"></span><span id="cb3-14"><span class="st"></span></span><span id="cb3-15"><span class="st"></span></span><span id="cb3-16"></span><span id="cb3-17"><span class="op"></span><span class="op"></span><span class="st"></span><span class="op"></span><span class="st"></span><span class="op"></span><span class="st"></span></span><span id="cb3-18"></span><span id="cb3-19"><span class="op"></span><span class="dv"></span><span class="op"></span><span class="st"></span><span class="dv"></span><span class="op"></span><span class="st"></span><span class="dv"></span><span class="op"></span><span class="st"></span><span class="op"></span><span class="dv"></span></span><span id="cb3-20"><span class="op"></span><span class="dv"></span><span class="op"></span><span class="st"></span><span class="dv"></span><span class="op"></span><span class="st"></span><span class="dv"></span><span class="op"></span><span class="st"></span><span class="op"></span><span class="dv"></span></span><span id="cb3-21"></span><span id="cb3-22"></span></code></pre></div><div class="cell-output cell-output-display"><div><figure class="figure"><p></p></figure></div></div><div class="cell-output cell-output-display"><pre><code></code></pre></div></div>
 </div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+정한렬
 </div>
-<div class="metadata">
-<a href="./posts/hw6/index.html" class="no-external">
 <div class="listing-date">
 Jul 30, 2024
 </div>
-<div class="listing-author">
-정한렬
+</div>
+</div>
 </div>
 </a>
 </div>
-</div>
-<div class="quarto-post image-right" data-index="4" data-categories="bigdata" data-listing-date-sort="1722178800000" data-listing-file-modified-sort="1722303139157" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="202">
-<div class="thumbnail">
-<p><a href="./posts/hw5/index.html" class="no-external"></a></p><a href="./posts/hw5/index.html" class="no-external">
-<p class="card-img-top"><img src="posts\hw5\index_files\figure-html\cell-2-output-1.png"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./posts/hw5/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/hw5/index.html" class="no-external">homework5</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/hw5/index.html" class="no-external"></a>
-</div>
+<div class="g-col-1" data-index="3" data-categories="bigdata" data-listing-date-sort="1722178800000" data-listing-file-modified-sort="1722303139157" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="202">
+<a href="./posts/hw5/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img src="posts\hw5\index_files\figure-html\cell-2-output-1.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+homework5
+</h5>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('bigdata'); return false;">
 bigdata
 </div>
 </div>
-<div class="listing-description">
-<a href="./posts/hw5/index.html" class="no-external"><strong>빨간색 분포, 즉 n-1로 구한 분산 분포의 평균이 모 분산과 더 잘 맞아 떨어지기 때문에 n-1로 나누는 것이 타당하다다 </strong></a>
+<div class="card-text listing-description">
+<strong>빨간색 분포, 즉 n-1로 구한 분산 분포의 평균이 모 분산과 더 잘 맞아 떨어지기 때문에 n-1로 나누는 것이 타당하다다 </strong>
 </div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+정한렬
 </div>
-<div class="metadata">
-<a href="./posts/hw5/index.html" class="no-external">
 <div class="listing-date">
 Jul 29, 2024
 </div>
-<div class="listing-author">
-정한렬
+</div>
+</div>
 </div>
 </a>
 </div>
-</div>
-<div class="quarto-post image-right" data-index="5" data-categories="bigdata" data-listing-date-sort="1721833200000" data-listing-file-modified-sort="1721914107938" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="122">
-<div class="thumbnail">
-<p><a href="./posts/hw4/index.html" class="no-external"></a></p><a href="./posts/hw4/index.html" class="no-external">
-<p class="card-img-top"><img src="posts\hw4\index_files\figure-html\cell-2-output-1.png"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./posts/hw4/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/hw4/index.html" class="no-external">homework4</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/hw4/index.html" class="no-external"></a>
-</div>
+<div class="g-col-1" data-index="4" data-categories="bigdata" data-listing-date-sort="1721833200000" data-listing-file-modified-sort="1721914107938" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="122">
+<a href="./posts/hw4/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img src="posts\hw4\index_files\figure-html\cell-2-output-1.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+homework4
+</h5>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('bigdata'); return false;">
 bigdata
 </div>
 </div>
-<div class="listing-description">
-<a href="./posts/hw4/index.html" class="no-external">X ~ N(2, 3^2)</a>
+<div class="card-text listing-description">
+X ~ N(2, 3^2)
 </div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+정한렬
 </div>
-<div class="metadata">
-<a href="./posts/hw4/index.html" class="no-external">
 <div class="listing-date">
 Jul 25, 2024
 </div>
-<div class="listing-author">
-정한렬
+</div>
+</div>
 </div>
 </a>
 </div>
-</div>
-<div class="quarto-post image-right" data-index="6" data-categories="bigdata" data-listing-date-sort="1721574000000" data-listing-file-modified-sort="1721665249990" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="244">
-<div class="thumbnail">
-<p><a href="./posts/hw3/index.html" class="no-external"></a></p><a href="./posts/hw3/index.html" class="no-external">
-<p class="card-img-top"><img src="posts\hw3\index_files\figure-html\cell-2-output-1.png"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./posts/hw3/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/hw3/index.html" class="no-external">homework3</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/hw3/index.html" class="no-external"></a>
-</div>
+<div class="g-col-1" data-index="5" data-categories="bigdata" data-listing-date-sort="1721574000000" data-listing-file-modified-sort="1723080507537" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="244">
+<a href="./posts/hw3/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img src="posts\hw3\youn2.jpg" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+homework3
+</h5>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('bigdata'); return false;">
 bigdata
 </div>
 </div>
-<div class="listing-description">
-<a href="./posts/hw3/index.html" class="no-external">
+<div class="card-text listing-description">
 
-</a>
+
+
 </div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+정한렬
 </div>
-<div class="metadata">
-<a href="./posts/hw3/index.html" class="no-external">
 <div class="listing-date">
 Jul 22, 2024
 </div>
-<div class="listing-author">
-정한렬
+</div>
+</div>
 </div>
 </a>
 </div>
-</div>
-<div class="quarto-post image-right" data-index="7" data-categories="bigdata" data-listing-date-sort="1721574000000" data-listing-file-modified-sort="1721637377713" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="119">
-<div class="thumbnail">
-<p><a href="./posts/plot/index.html" class="no-external"></a></p><a href="./posts/plot/index.html" class="no-external">
-<p class="card-img-top"><img src="posts\plot\index_files\figure-html\cell-5-output-1.png"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./posts/plot/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/plot/index.html" class="no-external">교과서 챕터 8</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/plot/index.html" class="no-external"></a>
-</div>
+<div class="g-col-1" data-index="6" data-categories="bigdata" data-listing-date-sort="1721574000000" data-listing-file-modified-sort="1721637377713" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="119">
+<a href="./posts/plot/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img src="posts\plot\index_files\figure-html\cell-5-output-1.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+교과서 챕터 8
+</h5>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('bigdata'); return false;">
 bigdata
 </div>
 </div>
-<div class="listing-description">
-<a href="./posts/plot/index.html" class="no-external">234 rows × 11 columns</a>
+<div class="card-text listing-description">
+234 rows × 11 columns
 </div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+정한렬
 </div>
-<div class="metadata">
-<a href="./posts/plot/index.html" class="no-external">
 <div class="listing-date">
 Jul 22, 2024
 </div>
-<div class="listing-author">
-정한렬
+</div>
+</div>
 </div>
 </a>
 </div>
-</div>
-<div class="quarto-post image-right" data-index="8" data-categories="bigdata" data-listing-date-sort="1720710000000" data-listing-file-modified-sort="1721193543293" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="218">
-<div class="thumbnail">
-<p><a href="./posts/hw1/index.html" class="no-external"></a></p><a href="./posts/hw1/index.html" class="no-external">
-<p class="card-img-top"><img src="posts\hw1\index_files\figure-html\cell-9-output-1.png"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./posts/hw1/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/hw1/index.html" class="no-external">homework1</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/hw1/index.html" class="no-external"></a>
-</div>
+<div class="g-col-1" data-index="7" data-categories="bigdata" data-listing-date-sort="1720710000000" data-listing-file-modified-sort="1723080431728" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="218">
+<a href="./posts/hw1/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img src="posts\hw1\youn10.jpg" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+homework1
+</h5>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('bigdata'); return false;">
 bigdata
 </div>
 </div>
-<div class="listing-description">
-<a href="./posts/hw1/index.html" class="no-external">234 rows × 11 columns</a>
+<div class="card-text listing-description">
+ ## 84p ## 다음 표의 내용을 데이터 프레임으로 만들어 출력해보세요.
 </div>
-</div>
-<div class="metadata">
-<a href="./posts/hw1/index.html" class="no-external">
-<div class="listing-date">
-Jul 12, 2024
-</div>
+<div class="card-attribution card-text-small justify">
 <div class="listing-author">
 정한렬
 </div>
+<div class="listing-date">
+Jul 12, 2024
+</div>
+</div>
+</div>
+</div>
 </a>
 </div>
-</div>
-<div class="quarto-post image-right" data-index="9" data-categories="bigdata" data-listing-date-sort="1720710000000" data-listing-file-modified-sort="1723078034968" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="317">
-<div class="thumbnail">
-<p><a href="./posts/hw2/index.html" class="no-external"></a></p><a href="./posts/hw2/index.html" class="no-external">
-<p class="card-img-top"><img src="posts\hw2\youn3.jpg"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./posts/hw2/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/hw2/index.html" class="no-external">homework2</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/hw2/index.html" class="no-external"></a>
-</div>
+<div class="g-col-1" data-index="8" data-categories="bigdata" data-listing-date-sort="1720710000000" data-listing-file-modified-sort="1723078792197" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="317">
+<a href="./posts/hw2/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img src="posts\hw2\youn3.jpg" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+homework2
+</h5>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('bigdata'); return false;">
 bigdata
 </div>
 </div>
-<div class="listing-description">
-<a href="./posts/hw2/index.html" class="no-external">234 rows × 12 columns</a>
+<div class="card-text listing-description">
+234 rows × 12 columns
 </div>
-</div>
-<div class="metadata">
-<a href="./posts/hw2/index.html" class="no-external">
-<div class="listing-date">
-Jul 12, 2024
-</div>
+<div class="card-attribution card-text-small justify">
 <div class="listing-author">
 정한렬
 </div>
-</a>
+<div class="listing-date">
+Jul 12, 2024
 </div>
+</div>
+</div>
+</div>
+</a>
 </div>
 </div>
 <div class="listing-no-matching d-none">

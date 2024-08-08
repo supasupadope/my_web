@@ -5,6 +5,7 @@ date: "2024-07-22"
 categories: [bigdata]
 jupyter: python3
 ---
+![](youn2.jpg)
 
 ## 204p) mpg 데이터와 midwest 데이터를 이용해 분석 문제를 해결해보세요.
 
