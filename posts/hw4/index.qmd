@@ -6,7 +6,7 @@ categories: [bigdata]
 jupyter: python3
 ---
 
-![](youn11.jpg)      
+![](youn22.gif)      
 
 
 ## 1. 정규분포 pdf 값을 계산하는 자신만의 파이썬 함수를 정의하고, 정규분포 mu = 3, sigma = 2 의 pdf를 그릴 것.
