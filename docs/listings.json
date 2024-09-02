@@ -2,10 +2,24 @@
   {
     "listing": "/blog.html",
     "items": [
-<<<<<<< HEAD
+      "/posts/index.html",
+      "/posts/hw8/index.html",
+      "/posts/hw7/index.html",
       "/posts/hw6/index.html",
-=======
->>>>>>> ae61720e3b43e1d2f1348fd348716bfef8931c36
+      "/posts/hw5/index.html",
+      "/posts/hw4/index.html",
+      "/posts/hw3/index.html",
+      "/posts/plot/index.html",
+      "/posts/hw1/index.html",
+      "/posts/hw2/index.html"
+    ]
+  },
+  {
+    "listing": "/posts/index.html",
+    "items": [
+      "/posts/hw8/index.html",
+      "/posts/hw7/index.html",
+      "/posts/hw6/index.html",
       "/posts/hw5/index.html",
       "/posts/hw4/index.html",
       "/posts/hw3/index.html",
