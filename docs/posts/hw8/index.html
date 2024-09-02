@@ -226,7 +226,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="adp-실기-시험의-통계파트-표준점수의-밀도함수를-그려보세요." class="level2">
 <h2 class="anchored" data-anchor-id="adp-실기-시험의-통계파트-표준점수의-밀도함수를-그려보세요.">1 ADP 실기 시험의 통계파트 표준점수의 밀도함수를 그려보세요.</h2>
-<div id="41ffb000" class="cell" data-execution_count="1">
+<div id="1f22dc30" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy.stats <span class="im">import</span> norm</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
@@ -247,7 +247,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="adp-수험생을-임의로-1명-선택하여-통계-점수를-조회했을때-45점-보다-높은-점수를-받았을-확률을-구하세요." class="level2">
 <h2 class="anchored" data-anchor-id="adp-수험생을-임의로-1명-선택하여-통계-점수를-조회했을때-45점-보다-높은-점수를-받았을-확률을-구하세요.">2 ADP 수험생을 임의로 1명 선택하여 통계 점수를 조회했을때 45점 보다 높은 점수를 받았을 확률을 구하세요.</h2>
-<div id="cdf400e3" class="cell" data-execution_count="2">
+<div id="840d1fd1" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>a <span class="op">=</span> <span class="dv">1</span> <span class="op">-</span> norm.cdf(<span class="dv">45</span>, <span class="dv">30</span>, <span class="dv">5</span>)</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>a</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="2">
@@ -257,7 +257,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="슬통이는-상위-10에-해당하는-점수를-얻었다고-한다면-슬통이의-점수는-얼마인지-계산해보세요." class="level2">
 <h2 class="anchored" data-anchor-id="슬통이는-상위-10에-해당하는-점수를-얻었다고-한다면-슬통이의-점수는-얼마인지-계산해보세요.">3 슬통이는 상위 10%에 해당하는 점수를 얻었다고 한다면, 슬통이의 점수는 얼마인지 계산해보세요.</h2>
-<div id="1cf6354a" class="cell" data-execution_count="3">
+<div id="46f83a67" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>a <span class="op">=</span> norm.ppf(<span class="fl">0.9</span>, <span class="dv">30</span>, <span class="dv">5</span>)</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>a</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="3">
@@ -267,7 +267,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="슬기로운-통계생활의-해당-회차-수강생은-16명이었다고-한다.-16명의-통계-파트-점수를-평균을-내었을-때-이-평균값이-따르는-분포의-확률밀도-함수를-1번의-그래프와-겹쳐-그려보세요." class="level2">
 <h2 class="anchored" data-anchor-id="슬기로운-통계생활의-해당-회차-수강생은-16명이었다고-한다.-16명의-통계-파트-점수를-평균을-내었을-때-이-평균값이-따르는-분포의-확률밀도-함수를-1번의-그래프와-겹쳐-그려보세요.">4 슬기로운 통계생활의 해당 회차 수강생은 16명이었다고 한다. 16명의 통계 파트 점수를 평균을 내었을 때, 이 평균값이 따르는 분포의 확률밀도 함수를 1번의 그래프와 겹쳐 그려보세요.</h2>
-<div id="7f40c356" class="cell" data-execution_count="4">
+<div id="a5463b03" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy.stats <span class="im">import</span> norm</span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
@@ -295,7 +295,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="슬기로운-통계생활-adp-반-수강생들의-통계점수를-평균내었다고-할-때-이-값이-38점보다-높게-나올-확률을-구하세요." class="level2">
 <h2 class="anchored" data-anchor-id="슬기로운-통계생활-adp-반-수강생들의-통계점수를-평균내었다고-할-때-이-값이-38점보다-높게-나올-확률을-구하세요.">5 슬기로운 통계생활 ADP 반 수강생들의 통계점수를 평균내었다고 할 때, 이 값이 38점보다 높게 나올 확률을 구하세요.</h2>
-<div id="611e2e00" class="cell" data-execution_count="5">
+<div id="8edc2b56" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy.stats <span class="im">import</span> norm</span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>d <span class="op">=</span> <span class="dv">1</span> <span class="op">-</span> norm.cdf(<span class="dv">38</span>, <span class="dv">30</span>, <span class="dv">5</span><span class="op">/</span><span class="dv">4</span>)</span>
@@ -310,7 +310,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h1>2. Covid 19</h1>
 <section id="다잡아-키트가-코로나-바이러스에-걸린-사람을-양성으로-잡아낼-확률을-계산하세요." class="level2">
 <h2 class="anchored" data-anchor-id="다잡아-키트가-코로나-바이러스에-걸린-사람을-양성으로-잡아낼-확률을-계산하세요.">1 다잡아 키트가 코로나 바이러스에 걸린 사람을 양성으로 잡아낼 확률을 계산하세요.</h2>
-<div id="4a05817c" class="cell" data-execution_count="6">
+<div id="92162d41" class="cell" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># P(양성|코로나)</span></span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>a <span class="op">=</span> <span class="dv">370</span><span class="op">/</span><span class="dv">385</span></span>
@@ -322,7 +322,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="슬통-회사에서-다잡아-키트를-사용해-양성으로-나온-사람이-실제로는-코로나-바이러스에-걸려-있을-확률을-97라며-키트의-우수성을-주장했다.-이-주장이-옳지-않은-이유를-서술하세요-covid19-발병률을-사용하여-키트의-결과값이-양성으로-나온-사람이-실제로-코로나-바이러스에-걸려있을-확률을-구하세요." class="level2">
 <h2 class="anchored" data-anchor-id="슬통-회사에서-다잡아-키트를-사용해-양성으로-나온-사람이-실제로는-코로나-바이러스에-걸려-있을-확률을-97라며-키트의-우수성을-주장했다.-이-주장이-옳지-않은-이유를-서술하세요-covid19-발병률을-사용하여-키트의-결과값이-양성으로-나온-사람이-실제로-코로나-바이러스에-걸려있을-확률을-구하세요.">2 &amp; 3 슬통 회사에서 다잡아 키트를 사용해 양성으로 나온 사람이 실제로는 코로나 바이러스에 걸려 있을 확률을 97%라며, 키트의 우수성을 주장했다. 이 주장이 옳지 않은 이유를 서술하세요, Covid‑19 발병률을 사용하여, 키트의 결과값이 양성으로 나온 사람이 실제로 코로나 바이러스에 걸려있을 확률을 구하세요.</h2>
-<div id="cfc0ff15" class="cell" data-execution_count="7">
+<div id="d7b36e45" class="cell" data-execution_count="7">
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>b <span class="op">=</span> <span class="dv">370</span><span class="op">/</span><span class="dv">380</span></span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>b <span class="co">#0.97</span></span>
 <span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -333,16 +333,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a>c <span class="op">=</span> <span class="fl">0.01</span></span>
 <span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-11"><a href="#cb11-11" aria-hidden="true" tabindex="-1"></a>p_c <span class="op">=</span> <span class="dv">370</span><span class="op">/</span><span class="dv">385</span> <span class="op">*</span> <span class="fl">0.01</span></span>
-<span id="cb11-12"><a href="#cb11-12" aria-hidden="true" tabindex="-1"></a>p_not_c <span class="op">=</span> <span class="dv">10</span><span class="op">/</span><span class="dv">700</span> <span class="op">*</span> <span class="fl">0.99</span></span>
+<span id="cb11-11"><a href="#cb11-11" aria-hidden="true" tabindex="-1"></a>p_c <span class="op">=</span> <span class="dv">370</span><span class="op">/</span><span class="dv">385</span> </span>
+<span id="cb11-12"><a href="#cb11-12" aria-hidden="true" tabindex="-1"></a>p_not_c <span class="op">=</span> <span class="dv">10</span><span class="op">/</span><span class="dv">700</span> </span>
 <span id="cb11-13"><a href="#cb11-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-14"><a href="#cb11-14" aria-hidden="true" tabindex="-1"></a>p <span class="op">=</span> p_c <span class="op">+</span> p_not_c </span>
+<span id="cb11-14"><a href="#cb11-14" aria-hidden="true" tabindex="-1"></a>p <span class="op">=</span> p_c <span class="op">*</span> <span class="fl">0.01</span> <span class="op">+</span> p_not_c  <span class="op">*</span> <span class="fl">0.99</span></span>
 <span id="cb11-15"><a href="#cb11-15" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb11-16"><a href="#cb11-16" aria-hidden="true" tabindex="-1"></a>c_p <span class="op">=</span> (c <span class="op">*</span> p_c) <span class="op">/</span> p</span>
 <span id="cb11-17"><a href="#cb11-17" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb11-18"><a href="#cb11-18" aria-hidden="true" tabindex="-1"></a>c_p <span class="co"># 키트 양성인 사람 중 코로나 양성 확률 </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="7">
-<pre><code>0.004045926735921268</code></pre>
+<pre><code>0.4045926735921268</code></pre>
 </div>
 </div>
 <section id="는-사전-확률이고-베이즈-정리를-통해-나온-약-40의-사후-확률이-더-정확한-의미에서의-양성으로-나온-사람이-실제로는-코로나-바이러스에-걸려있을-확률이다." class="level3">
@@ -354,7 +354,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h1>3. 카이제곱분포와 표본분산</h1>
 <section id="자유도가-4인-카이제곱분포의-확률밀도함수를-그려보세요" class="level2">
 <h2 class="anchored" data-anchor-id="자유도가-4인-카이제곱분포의-확률밀도함수를-그려보세요">1 자유도가 4인 카이제곱분포의 확률밀도함수를 그려보세요</h2>
-<div id="20ddf48a" class="cell" data-execution_count="8">
+<div id="295f1d86" class="cell" data-execution_count="8">
 <div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy.stats <span class="im">import</span> chi2</span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
@@ -375,7 +375,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="다음의-확률을-구해보세요-p3-x-5" class="level2">
 <h2 class="anchored" data-anchor-id="다음의-확률을-구해보세요-p3-x-5">2 다음의 확률을 구해보세요 P(3 &lt;= X &lt;= 5)</h2>
-<div id="b468f15f" class="cell" data-execution_count="9">
+<div id="a5b0a55e" class="cell" data-execution_count="9">
 <div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>right <span class="op">=</span> chi2.cdf(<span class="dv">5</span>, <span class="dv">4</span>)</span>
 <span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>left <span class="op">=</span> chi2.cdf(<span class="dv">3</span>, <span class="dv">4</span>)</span>
 <span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -387,14 +387,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="자유도가-4인-카이제곱분포에서-크기가-1000인-표본을-뽑은-후-히스토그램을-그려보세요." class="level2">
 <h2 class="anchored" data-anchor-id="자유도가-4인-카이제곱분포에서-크기가-1000인-표본을-뽑은-후-히스토그램을-그려보세요.">3 자유도가 4인 카이제곱분포에서 크기가 1000인 표본을 뽑은 후, 히스토그램을 그려보세요.</h2>
-<div id="0682cf48" class="cell" data-execution_count="10">
+<div id="f063c5d9" class="cell" data-execution_count="10">
 <div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>a <span class="op">=</span> chi2.rvs(<span class="dv">4</span>, size <span class="op">=</span> <span class="dv">1000</span>)</span>
 <span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>plt.hist(a)</span>
 <span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="index_files/figure-html/cell-11-output-1.png" width="575" height="413" class="figure-img"></p>
+<p><img src="index_files/figure-html/cell-11-output-1.png" width="575" height="411" class="figure-img"></p>
 </figure>
 </div>
 </div>
@@ -402,7 +402,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="자유도가-4인-카이제곱분포를-따르는-확률변수에서-나올-수-있는-값-중-상위-5에-해당하는-값은-얼마인지-계산해보세요." class="level2">
 <h2 class="anchored" data-anchor-id="자유도가-4인-카이제곱분포를-따르는-확률변수에서-나올-수-있는-값-중-상위-5에-해당하는-값은-얼마인지-계산해보세요.">4 자유도가 4인 카이제곱분포를 따르는 확률변수에서 나올 수 있는 값 중 상위 5%에 해당하는 값은 얼마인지 계산해보세요.</h2>
-<div id="dbc4d915" class="cell" data-execution_count="11">
+<div id="4c56c3ef" class="cell" data-execution_count="11">
 <div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>chi2.ppf(<span class="fl">0.95</span>, <span class="dv">4</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="11">
 <pre><code>np.float64(9.487729036781154)</code></pre>
@@ -411,7 +411,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="번에서-뽑힌-표본값들-중-상위-5에-위치한-표본의-값은-얼마인가요" class="level2">
 <h2 class="anchored" data-anchor-id="번에서-뽑힌-표본값들-중-상위-5에-위치한-표본의-값은-얼마인가요">5 3번에서 뽑힌 표본값들 중 상위 5%에 위치한 표본의 값은 얼마인가요?</h2>
-<div id="104b2541" class="cell" data-execution_count="12">
+<div id="5ce68bf3" class="cell" data-execution_count="12">
 <div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>chi2.ppf(<span class="fl">0.9975</span>, <span class="dv">4</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="12">
 <pre><code>np.float64(16.423936124136556)</code></pre>
@@ -420,7 +420,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="평균이-3-표준편차가-2인-정규분포를-따르는-확률변수에서-크기가-20인-표본-𝑥1-𝑥20을-뽑은-후-표본분산을-계산한-것을-𝑠21이라-생각해보죠.-다음을-수행해보세요" class="level2">
 <h2 class="anchored" data-anchor-id="평균이-3-표준편차가-2인-정규분포를-따르는-확률변수에서-크기가-20인-표본-𝑥1-𝑥20을-뽑은-후-표본분산을-계산한-것을-𝑠21이라-생각해보죠.-다음을-수행해보세요">6 평균이 3, 표준편차가 2인 정규분포를 따르는 확률변수에서 크기가 20인 표본, 𝑥1, …, 𝑥20,을 뽑은 후 표본분산을 계산한 것을 𝑠21이라 생각해보죠. 다음을 수행해보세요!</h2>
-<div id="4b78830a" class="cell" data-execution_count="13">
+<div id="a3adafe5" class="cell" data-execution_count="13">
 <div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>std <span class="op">=</span> []</span>
 <span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">500</span>):</span>
@@ -441,7 +441,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb21-18"><a href="#cb21-18" aria-hidden="true" tabindex="-1"></a>plt.legend()</span>
 <span id="cb21-19"><a href="#cb21-19" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
-<pre><code>C:\Users\USER\AppData\Local\Temp\ipykernel_1456\1831535740.py:18: UserWarning:
+<pre><code>C:\Users\USER\AppData\Local\Temp\ipykernel_24432\1831535740.py:18: UserWarning:
 
 No artists with labels found to put in legend.  Note that artists whose label start with an underscore are ignored when legend() is called with no argument.
 </code></pre>
