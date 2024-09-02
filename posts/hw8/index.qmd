@@ -6,7 +6,7 @@ categories: [bigdata]
 jupyter: python3
 ---
 
-![](youn333.jpg)
+![](youn35.gif)
 
 # 1. ADP 표본 점수
 
