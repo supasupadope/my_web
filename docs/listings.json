@@ -3,6 +3,7 @@
     "listing": "/blog.html",
     "items": [
       "/posts/index.html",
+      "/posts/hw9/index.html",
       "/posts/hw8/index.html",
       "/posts/hw7/index.html",
       "/posts/hw6/index.html",
@@ -17,6 +18,7 @@
   {
     "listing": "/posts/index.html",
     "items": [
+      "/posts/hw9/index.html",
       "/posts/hw8/index.html",
       "/posts/hw7/index.html",
       "/posts/hw6/index.html",
