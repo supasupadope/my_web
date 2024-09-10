@@ -77,12 +77,12 @@ cell_beta = 30.830
 z = 2.58
 std_err = 52.135
 
-upper = cell_beta + z * std_err
-lower = cell_beta - z * std_err
+upper = cell_beta + z * std_err #  165.3383
+lower = cell_beta - z * std_err # -103.6783
 
-upper #165.3383
-lower #-103.6783
-print(upper, lower)
+up = np.exp(upper) 
+low = np.exp(lower)
+print(up, low)
 ```
 
 # 문제 8. 주어진 데이터에 대하여 로지스틱 회귀 모델의 예측 확률을 구한 후, 50% 이상인 경우 1로 처리하여, 혼동 행렬를 구하시오.
