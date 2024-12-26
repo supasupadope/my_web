@@ -1,0 +1,443 @@
+[
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "my blog",
+    "section": "",
+    "text": "Recent posts\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n최저 임금 데이터 분석\n\n\n\nbigdata\n\n\n\n\n\n\n\n정한렬\n\n\nDec 26, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nhomework9\n\n\n\nbigdata\n\n\n\n\n\n\n\n정한렬\n\n\nSep 10, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nhomework8\n\n\n\nbigdata\n\n\n\n\n\n\n\n정한렬\n\n\nSep 3, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nhomework7\n\n\n\nbigdata\n\n\n\n\n\n\n\n정한렬\n\n\nAug 5, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nhomework6\n\n\n\nbigdata\n\n\n\n\n\n\n\n정한렬\n\n\nJul 30, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nhomework5\n\n\n\nbigdata\n\n\n\n\n\n\n\n정한렬\n\n\nJul 29, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nhomework4\n\n\n\nbigdata\n\n\n\n\n\n\n\n정한렬\n\n\nJul 25, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nhomework3\n\n\n\nbigdata\n\n\n\n\n\n\n\n정한렬\n\n\nJul 22, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n교과서 챕터 8\n\n\n\nbigdata\n\n\n\n\n\n\n\n정한렬\n\n\nJul 22, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nhomework1\n\n\n\nbigdata\n\n\n\n\n\n\n\n정한렬\n\n\nJul 12, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nhomework2\n\n\n\nbigdata\n\n\n\n\n\n\n\n정한렬\n\n\nJul 12, 2024\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/plot/index.html#빈도-막대-그래프-그리기",
+    "href": "posts/plot/index.html#빈도-막대-그래프-그리기",
+    "title": "교과서 챕터 8",
+    "section": "빈도 막대 그래프 그리기",
+    "text": "빈도 막대 그래프 그리기"
+  },
+  {
+    "objectID": "posts/plot/index.html#데이터-불러오기",
+    "href": "posts/plot/index.html#데이터-불러오기",
+    "title": "교과서 챕터 8",
+    "section": "데이터 불러오기",
+    "text": "데이터 불러오기\n\nimport pandas as pd\nmpg = pd.read_csv('data/mpg.csv')\nmpg\n\n\n\n\n\n\n\n\nmanufacturer\nmodel\ndispl\nyear\ncyl\ntrans\ndrv\ncty\nhwy\nfl\ncategory\n\n\n\n\n0\naudi\na4\n1.8\n1999\n4\nauto(l5)\nf\n18\n29\np\ncompact\n\n\n1\naudi\na4\n1.8\n1999\n4\nmanual(m5)\nf\n21\n29\np\ncompact\n\n\n2\naudi\na4\n2.0\n2008\n4\nmanual(m6)\nf\n20\n31\np\ncompact\n\n\n3\naudi\na4\n2.0\n2008\n4\nauto(av)\nf\n21\n30\np\ncompact\n\n\n4\naudi\na4\n2.8\n1999\n6\nauto(l5)\nf\n16\n26\np\ncompact\n\n\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n\n\n229\nvolkswagen\npassat\n2.0\n2008\n4\nauto(s6)\nf\n19\n28\np\nmidsize\n\n\n230\nvolkswagen\npassat\n2.0\n2008\n4\nmanual(m6)\nf\n21\n29\np\nmidsize\n\n\n231\nvolkswagen\npassat\n2.8\n1999\n6\nauto(l5)\nf\n16\n26\np\nmidsize\n\n\n232\nvolkswagen\npassat\n2.8\n1999\n6\nmanual(m5)\nf\n18\n26\np\nmidsize\n\n\n233\nvolkswagen\npassat\n3.6\n2008\n6\nauto(s6)\nf\n17\n26\np\nmidsize\n\n\n\n\n234 rows × 11 columns"
+  },
+  {
+    "objectID": "posts/plot/index.html#seaborn-패키지-불러오기",
+    "href": "posts/plot/index.html#seaborn-패키지-불러오기",
+    "title": "교과서 챕터 8",
+    "section": "Seaborn 패키지 불러오기",
+    "text": "Seaborn 패키지 불러오기\n\nimport seaborn as sns\nimport matplotlib.pyplot as plt\nimport plotly.express as px"
+  },
+  {
+    "objectID": "posts/plot/index.html#데이터-전처리하기",
+    "href": "posts/plot/index.html#데이터-전처리하기",
+    "title": "교과서 챕터 8",
+    "section": "데이터 전처리하기",
+    "text": "데이터 전처리하기\n\ndf_mpg = mpg.groupby('drv', as_index = False) \\\n            .agg(mean_hwy = ('hwy', 'mean')) \n\n\nscatter() 사용하기\n\nsns.scatterplot(data = mpg, x = 'displ', y = 'hwy', hue = 'drv') \\\n   .set(xlim = [3, 6], ylim = [10, 30])\n\n\n\n\n\n\n\n\n\n\nplotly를 사용한 산점도\n\nplt.clf()\npx.scatter(data_frame = mpg, x = 'cty', y = 'hwy', color = 'drv')\n\n                                                \n\n\n&lt;Figure size 672x480 with 0 Axes&gt;\n\n\n\n\n‘barplot()’ 사용하기\n\nsns.barplot(data=df_mpg.sort_values('mean_hwy'),\n            x = \"drv\", y = \"mean_hwy\", hue = \"drv\")\n\n\n\n\n\n\n\n\n\n\n‘countplot()’ 사용하기\n\nsns.countplot(data = mpg, x = 'drv', hue= 'drv', order = ['4', 'f', 'r'])"
+  },
+  {
+    "objectID": "posts/hw9/index.html",
+    "href": "posts/hw9/index.html",
+    "title": "homework9",
+    "section": "",
+    "text": "문제 1.데이터를 로드하고, 로지스틱 회귀모델을 적합하고, 회귀 표를 작성하세요.\n\nimport pandas as pd\ndf = pd.read_csv(\"./data/leukemia_remission.csv\")\n\nimport statsmodels.api as sm\nimport pandas as pd\nimport numpy as np\nimport sklearn\nfrom scipy.stats import chi2\n\nmodel = sm.formula.logit(\"REMISS ~ CELL + SMEAR + INFIL + LI + BLAST + TEMP\",data=df).fit()\nprint(model.summary())\n\nOptimization terminated successfully.\n         Current function value: 0.399886\n         Iterations 10\n                           Logit Regression Results                           \n==============================================================================\nDep. Variable:                 REMISS   No. Observations:                   27\nModel:                          Logit   Df Residuals:                       20\nMethod:                           MLE   Df Model:                            6\nDate:                Tue, 10 Sep 2024   Pseudo R-squ.:                  0.3718\nTime:                        11:01:37   Log-Likelihood:                -10.797\nconverged:                       True   LL-Null:                       -17.186\nCovariance Type:            nonrobust   LLR p-value:                   0.04670\n==============================================================================\n                 coef    std err          z      P&gt;|z|      [0.025      0.975]\n------------------------------------------------------------------------------\nIntercept     64.2581     74.965      0.857      0.391     -82.670     211.187\nCELL          30.8301     52.135      0.591      0.554     -71.353     133.013\nSMEAR         24.6863     61.526      0.401      0.688     -95.903     145.275\nINFIL        -24.9745     65.281     -0.383      0.702    -152.923     102.974\nLI             4.3605      2.658      1.641      0.101      -0.849       9.570\nBLAST         -0.0115      2.266     -0.005      0.996      -4.453       4.430\nTEMP        -100.1734     77.753     -1.288      0.198    -252.567      52.220\n==============================================================================\n\nPossibly complete quasi-separation: A fraction 0.11 of observations can be\nperfectly predicted. This might indicate that there is complete\nquasi-separation. In this case some parameters will not be identified.\n\n\n\n\n문제 2.해당 모델은 통계적으로 유의한가요? 그 이유를 검정통계량를 사용해서 설명하시오.\n\nllr = -2 * (-17.186 + 10.797) # 검정 통계량  12.78\n1 - chi2.cdf(llr, 6) # p-value인 0.0467\n\nnp.float64(0.04669995098322843)\n\n\n\n유의수준 0.05하에서 LLR p-value가 0.0467로 유의수준보다 작으므로 통계적으로 유의하다.\n\n\n\n문제 3.유의수준이 0.2를 기준으로 통계적으로 유의한 변수는 몇개이며, 어느 변수 인가요?\n\nP&gt;|z|가 유의수준 0.2보다 작은 변수는 LI, TEMP다.\n\n\n\n문제 4. 다음 환자에 대한 오즈는 얼마인가요?\n\n#CELL (골수의 세포성): 65%\n\n#SMEAR (골수편의 백혈구 비율): 45%\n\n#INFIL (골수의 백혈병 세포 침투 비율): 55%\n\n#LI (골수 백혈병 세포의 라벨링 인덱스): 1.2\n\n#BLAST (말초혈액의 백혈병 세포 수): 1.1세포/μL\n\n#TEMP (치료 시작 전 최고 체온): 0.9\n\n#오즈값구하기 0.0381748712694388\n\nmy_odds = np.exp(64.2581 +30.8301*0.65 + 24.686316*0.45 -24.9745*0.55 +4.3605*1.2 -0.0115*1.1 -100.1734*0.9)\nprint(my_odds)\n\n0.0381748712694388\n\n\n\n\n문제 5. 위 환자의 혈액에서 백혈병 세포가 관측되지 않은 확률은 얼마인가요?\n\nmy_odds / (my_odds+1)\n\nnp.float64(0.036771137816849764)\n\n\n\n백혈병 관측되지 않을 확률: 0.036771137816849764\n\n\n\n문제 6. TEMP 변수의 계수는 얼마이며, 해당 계수를 사용해서 TEMP 변수가 백혈병 치료에 대한 영향을 설명하시오.\n\nTEMP 변수의 계수는 -100.1734이다,체온이 1 올라가면 로그 오즈는 100.1734만큼 감소하며, 백혈병 상태에 도달할 가능성이 크게 줄어든다\n\n\n\n문제 7. CELL 변수의 99% 오즈비에 대한 신뢰구간을 구하시오.\n\ncell_beta = 30.830\nz = 2.58\nstd_err = 52.135\n\nupper = cell_beta + z * std_err #  165.3383\nlower = cell_beta - z * std_err # -103.6783\n\nup = np.exp(upper) \nlow = np.exp(lower)\nprint(up, low)\n\n6.390154186383071e+71 9.399103174215862e-46\n\n\n\n\n문제 8. 주어진 데이터에 대하여 로지스틱 회귀 모델의 예측 확률을 구한 후, 50% 이상인 경우 1로 처리하여, 혼동 행렬를 구하시오.\n\nfrom sklearn.metrics import confusion_matrix\n\n# 1. 모델을 사용하여 예측 확률을 계산\npred_probs = model.predict(df)\n\n# 2. 50% 기준으로 이진화 (0 또는 1로 변환)\npredictions = [1 if prob &gt;= 0.5 else 0 for prob in pred_probs]\n\n# 3. 실제 값 (df['REMISS'])과 예측 값 (predictions) 비교하여 혼동 행렬 계산\nconf_matrix = confusion_matrix(df['REMISS'], predictions)\n\n# 혼동 행렬 출력\nconf_matrix\n\narray([[15,  3],\n       [ 4,  5]])\n\n\n\n\n문제 9. 해당 모델의 Accuracy는 얼마인가요?\n\n(15+5)/(15+3+4+5) = 0.74\n\n\n\n문제 10. 해당 모델의 F1 Score를 구하세요.\n\nprecision = 5/(5+3)\nrecall = 5/(5+4)\nF1_score = 2 * ( precision*recall /(precision + recall))\nprint(F1_score)\n\n0.5882352941176471"
+  },
+  {
+    "objectID": "posts/hw7/index.html#대립가설-22년-개발된-슬통-자동차의-신형-모델의-에너지-소비-효율은-16.0-미만이다.",
+    "href": "posts/hw7/index.html#대립가설-22년-개발된-슬통-자동차의-신형-모델의-에너지-소비-효율은-16.0-미만이다.",
+    "title": "homework7",
+    "section": "대립가설: 22년 개발된 슬통 자동차의 신형 모델의 에너지 소비 효율은 16.0 미만이다.",
+    "text": "대립가설: 22년 개발된 슬통 자동차의 신형 모델의 에너지 소비 효율은 16.0 미만이다."
+  },
+  {
+    "objectID": "posts/hw7/index.html#영가설-22년-개발된-슬통-자동차의-신형-모델의-에너지-소비-효율은-16.0-이상이다.",
+    "href": "posts/hw7/index.html#영가설-22년-개발된-슬통-자동차의-신형-모델의-에너지-소비-효율은-16.0-이상이다.",
+    "title": "homework7",
+    "section": "영가설 : 22년 개발된 슬통 자동차의 신형 모델의 에너지 소비 효율은 16.0 이상이다.",
+    "text": "영가설 : 22년 개발된 슬통 자동차의 신형 모델의 에너지 소비 효율은 16.0 이상이다."
+  },
+  {
+    "objectID": "posts/hw7/index.html#p-value가-0.01보다-높아서-영가설을-기각할-수-없다.",
+    "href": "posts/hw7/index.html#p-value가-0.01보다-높아서-영가설을-기각할-수-없다.",
+    "title": "homework7",
+    "section": "p-value가 0.01보다 높아서 영가설을 기각할 수 없다.",
+    "text": "p-value가 0.01보다 높아서 영가설을 기각할 수 없다."
+  },
+  {
+    "objectID": "posts/hw5/index.html#n-1로-나눈-것을-s_2-n으로-나눈-것을-k_2로-정의하고-s_2의-분포와-k_2의-분포를-그려주세요-10000개-사용",
+    "href": "posts/hw5/index.html#n-1로-나눈-것을-s_2-n으로-나눈-것을-k_2로-정의하고-s_2의-분포와-k_2의-분포를-그려주세요-10000개-사용",
+    "title": "homework5",
+    "section": "1. n-1로 나눈 것을 s_2, n으로 나눈 것을 k_2로 정의하고, s_2의 분포와 k_2의 분포를 그려주세요! (10000개 사용)",
+    "text": "1. n-1로 나눈 것을 s_2, n으로 나눈 것을 k_2로 정의하고, s_2의 분포와 k_2의 분포를 그려주세요! (10000개 사용)\n\nimport numpy as np\nimport matplotlib.pyplot as plt\nimport seaborn as sns\n\n\ns_2 = []\nk_2 = []\n\nfor i in range(10000):\n    uni = np.random.uniform(3, 7, 20)\n    uni\n    uni_mean = uni.mean()\n    a = sum((uni - uni_mean) ** 2)\n    s = a / (len(uni) - 1) \n    k = a / (len(uni))\n    s_2.append(s)\n    k_2.append(k)\n    \nsns.histplot(s_2, color = 'r')\nplt.show()\nplt.clf()\n\n\n\n\n\n\n\n\n&lt;Figure size 672x480 with 0 Axes&gt;\n\n\n\nplt.clf()\nsns.histplot(k_2, color = 'b')\nplt.show()"
+  },
+  {
+    "objectID": "posts/hw5/index.html#각-분포-그래프에-모분산의-위치에-녹색-막대를-그려주세요.",
+    "href": "posts/hw5/index.html#각-분포-그래프에-모분산의-위치에-녹색-막대를-그려주세요.",
+    "title": "homework5",
+    "section": "2. 각 분포 그래프에 모분산의 위치에 녹색 막대를 그려주세요.",
+    "text": "2. 각 분포 그래프에 모분산의 위치에 녹색 막대를 그려주세요.\n\nplt.clf()\npop_var = ((7 - 3) ** 2) / 12 \n\nplt.axvline(pop_var, color = 'green', linestyle = '--',  linewidth = 3)\nsns.histplot(s_2, color = 'r')\nplt.show()\n\n\n\n\n\n\n\n\n\nplt.clf()\nsns.histplot(k_2, color = 'b')\nplt.axvline(pop_var, color = 'green', linestyle = '--',  linewidth = 3)\nplt.show()"
+  },
+  {
+    "objectID": "posts/hw5/index.html#결과를-살펴보고-왜-n-1로-나눈-것을-분산을-추정하는-지표로-사용하는-것이-타당한지-써주세요",
+    "href": "posts/hw5/index.html#결과를-살펴보고-왜-n-1로-나눈-것을-분산을-추정하는-지표로-사용하는-것이-타당한지-써주세요",
+    "title": "homework5",
+    "section": "3. 결과를 살펴보고, 왜 n-1로 나눈 것을 분산을 추정하는 지표로 사용하는 것이 타당한지 써주세요!",
+    "text": "3. 결과를 살펴보고, 왜 n-1로 나눈 것을 분산을 추정하는 지표로 사용하는 것이 타당한지 써주세요!\n\nplt.axvline(pop_var, color = 'green', linestyle = '--',  linewidth = 3)\nsns.histplot(s_2, color = 'r')\nplt.show()\nsns.histplot(k_2, color = 'b')\nplt.axvline(pop_var, color = 'green', linestyle = '--',  linewidth = 3)\nplt.show()\nplt.clf()\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n&lt;Figure size 672x480 with 0 Axes&gt;\n\n\n빨간색 분포, 즉 n-1로 구한 분산 분포의 평균이 모 분산과 더 잘 맞아 떨어지기 때문에 n-1로 나누는 것이 타당하다다"
+  },
+  {
+    "objectID": "posts/hw3/index.html#p-mpg-데이터와-midwest-데이터를-이용해-분석-문제를-해결해보세요.",
+    "href": "posts/hw3/index.html#p-mpg-데이터와-midwest-데이터를-이용해-분석-문제를-해결해보세요.",
+    "title": "homework3",
+    "section": "204p) mpg 데이터와 midwest 데이터를 이용해 분석 문제를 해결해보세요.",
+    "text": "204p) mpg 데이터와 midwest 데이터를 이용해 분석 문제를 해결해보세요."
+  },
+  {
+    "objectID": "posts/hw3/index.html#p-mpg-데이터를-이용해-분석-문제를-해결해-보세요.",
+    "href": "posts/hw3/index.html#p-mpg-데이터를-이용해-분석-문제를-해결해-보세요.",
+    "title": "homework3",
+    "section": "211p) mpg 데이터를 이용해 분석 문제를 해결해 보세요.",
+    "text": "211p) mpg 데이터를 이용해 분석 문제를 해결해 보세요."
+  },
+  {
+    "objectID": "posts/hw1/index.html",
+    "href": "posts/hw1/index.html",
+    "title": "homework1",
+    "section": "",
+    "text": "## 84p ## 다음 표의 내용을 데이터 프레임으로 만들어 출력해보세요.\nimport pandas as pd\n\ndf = pd.DataFrame({\n    'product': ['사과', '딸기', '수박'],\n    'price': [1800, 1500, 3000],\n    'quantity': [24, 38, 13]\n})\ndf\n\n\n\n\n\n\n\n\nproduct\nprice\nquantity\n\n\n\n\n0\n사과\n1800\n24\n\n\n1\n딸기\n1500\n38\n\n\n2\n수박\n3000\n13"
+  },
+  {
+    "objectID": "posts/hw1/index.html#앞에서-만든-데이터-프레임을-이용해-과일의-가격-평균과-판매량-평균을-구해보세요.",
+    "href": "posts/hw1/index.html#앞에서-만든-데이터-프레임을-이용해-과일의-가격-평균과-판매량-평균을-구해보세요.",
+    "title": "homework1",
+    "section": "앞에서 만든 데이터 프레임을 이용해 과일의 가격 평균과 판매량 평균을 구해보세요.",
+    "text": "앞에서 만든 데이터 프레임을 이용해 과일의 가격 평균과 판매량 평균을 구해보세요.\n\na = sum(df[\"price\"])/3\nb= sum(df[\"quantity\"])/3\n\nprint(\"평균 가격은 \" + str(a) +\" 이고, 평균 판매량은 \" + str(b) + \" 입니다\")\n\n평균 가격은 2100.0 이고, 평균 판매량은 25.0 입니다"
+  },
+  {
+    "objectID": "posts/hw1/index.html#p",
+    "href": "posts/hw1/index.html#p",
+    "title": "homework1",
+    "section": "115p",
+    "text": "115p"
+  },
+  {
+    "objectID": "posts/hw1/index.html#mpg-데이터를-불러와-복사본을-만드세요",
+    "href": "posts/hw1/index.html#mpg-데이터를-불러와-복사본을-만드세요",
+    "title": "homework1",
+    "section": "mpg 데이터를 불러와 복사본을 만드세요",
+    "text": "mpg 데이터를 불러와 복사본을 만드세요\n\nimport pandas as pd\n\ndf_raw = pd.read_csv('data/mpg.csv')\n\ndf_new = df_raw.copy()\ndf_new\n\n\n\n\n\n\n\n\nmanufacturer\nmodel\ndispl\nyear\ncyl\ntrans\ndrv\ncty\nhwy\nfl\ncategory\n\n\n\n\n0\naudi\na4\n1.8\n1999\n4\nauto(l5)\nf\n18\n29\np\ncompact\n\n\n1\naudi\na4\n1.8\n1999\n4\nmanual(m5)\nf\n21\n29\np\ncompact\n\n\n2\naudi\na4\n2.0\n2008\n4\nmanual(m6)\nf\n20\n31\np\ncompact\n\n\n3\naudi\na4\n2.0\n2008\n4\nauto(av)\nf\n21\n30\np\ncompact\n\n\n4\naudi\na4\n2.8\n1999\n6\nauto(l5)\nf\n16\n26\np\ncompact\n\n\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n\n\n229\nvolkswagen\npassat\n2.0\n2008\n4\nauto(s6)\nf\n19\n28\np\nmidsize\n\n\n230\nvolkswagen\npassat\n2.0\n2008\n4\nmanual(m6)\nf\n21\n29\np\nmidsize\n\n\n231\nvolkswagen\npassat\n2.8\n1999\n6\nauto(l5)\nf\n16\n26\np\nmidsize\n\n\n232\nvolkswagen\npassat\n2.8\n1999\n6\nmanual(m5)\nf\n18\n26\np\nmidsize\n\n\n233\nvolkswagen\npassat\n3.6\n2008\n6\nauto(s6)\nf\n17\n26\np\nmidsize\n\n\n\n\n234 rows × 11 columns"
+  },
+  {
+    "objectID": "posts/hw1/index.html#복사본-데이터를-이용해-cty는-city로-hwy는-highway로-수정하세요.",
+    "href": "posts/hw1/index.html#복사본-데이터를-이용해-cty는-city로-hwy는-highway로-수정하세요.",
+    "title": "homework1",
+    "section": "복사본 데이터를 이용해 cty는 city로, hwy는 highway로 수정하세요.",
+    "text": "복사본 데이터를 이용해 cty는 city로, hwy는 highway로 수정하세요.\n\ndf_new = df_new.rename(columns = {'cty' : 'city'})\ndf_new = df_new.rename(columns = {'hwy' : 'highway'})"
+  },
+  {
+    "objectID": "posts/hw1/index.html#데이터-일부를-출력해-변수명이-바뀌었는지-확인해-보세요.-다음과-같은-결과물이-출력되어야-합니다.",
+    "href": "posts/hw1/index.html#데이터-일부를-출력해-변수명이-바뀌었는지-확인해-보세요.-다음과-같은-결과물이-출력되어야-합니다.",
+    "title": "homework1",
+    "section": "데이터 일부를 출력해 변수명이 바뀌었는지 확인해 보세요. 다음과 같은 결과물이 출력되어야 합니다.",
+    "text": "데이터 일부를 출력해 변수명이 바뀌었는지 확인해 보세요. 다음과 같은 결과물이 출력되어야 합니다.\n\ndf_new[0:5]\ndf_new[['city', 'highway']]\n\ndf_new\n\n\n\n\n\n\n\n\nmanufacturer\nmodel\ndispl\nyear\ncyl\ntrans\ndrv\ncity\nhighway\nfl\ncategory\n\n\n\n\n0\naudi\na4\n1.8\n1999\n4\nauto(l5)\nf\n18\n29\np\ncompact\n\n\n1\naudi\na4\n1.8\n1999\n4\nmanual(m5)\nf\n21\n29\np\ncompact\n\n\n2\naudi\na4\n2.0\n2008\n4\nmanual(m6)\nf\n20\n31\np\ncompact\n\n\n3\naudi\na4\n2.0\n2008\n4\nauto(av)\nf\n21\n30\np\ncompact\n\n\n4\naudi\na4\n2.8\n1999\n6\nauto(l5)\nf\n16\n26\np\ncompact\n\n\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n\n\n229\nvolkswagen\npassat\n2.0\n2008\n4\nauto(s6)\nf\n19\n28\np\nmidsize\n\n\n230\nvolkswagen\npassat\n2.0\n2008\n4\nmanual(m6)\nf\n21\n29\np\nmidsize\n\n\n231\nvolkswagen\npassat\n2.8\n1999\n6\nauto(l5)\nf\n16\n26\np\nmidsize\n\n\n232\nvolkswagen\npassat\n2.8\n1999\n6\nmanual(m5)\nf\n18\n26\np\nmidsize\n\n\n233\nvolkswagen\npassat\n3.6\n2008\n6\nauto(s6)\nf\n17\n26\np\nmidsize\n\n\n\n\n234 rows × 11 columns"
+  },
+  {
+    "objectID": "posts/hw1/index.html#p-1",
+    "href": "posts/hw1/index.html#p-1",
+    "title": "homework1",
+    "section": "130p",
+    "text": "130p"
+  },
+  {
+    "objectID": "posts/hw1/index.html#midwest.csv를-불러와-데이터의-특징을-파악하세요.",
+    "href": "posts/hw1/index.html#midwest.csv를-불러와-데이터의-특징을-파악하세요.",
+    "title": "homework1",
+    "section": "midwest.csv를 불러와 데이터의 특징을 파악하세요.",
+    "text": "midwest.csv를 불러와 데이터의 특징을 파악하세요.\n\nimport pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt\n\ndf_raw = pd.read_csv('data/midwest.csv')\ndf_new = df_raw.copy()\ndf_new.head()\ndf_new.tail()\ndf_new.shape\ndf_new.info()\ndf_new.describe()\ndf_new\n\n&lt;class 'pandas.core.frame.DataFrame'&gt;\nRangeIndex: 437 entries, 0 to 436\nData columns (total 28 columns):\n #   Column                Non-Null Count  Dtype  \n---  ------                --------------  -----  \n 0   PID                   437 non-null    int64  \n 1   county                437 non-null    object \n 2   state                 437 non-null    object \n 3   area                  437 non-null    float64\n 4   poptotal              437 non-null    int64  \n 5   popdensity            437 non-null    float64\n 6   popwhite              437 non-null    int64  \n 7   popblack              437 non-null    int64  \n 8   popamerindian         437 non-null    int64  \n 9   popasian              437 non-null    int64  \n 10  popother              437 non-null    int64  \n 11  percwhite             437 non-null    float64\n 12  percblack             437 non-null    float64\n 13  percamerindan         437 non-null    float64\n 14  percasian             437 non-null    float64\n 15  percother             437 non-null    float64\n 16  popadults             437 non-null    int64  \n 17  perchsd               437 non-null    float64\n 18  percollege            437 non-null    float64\n 19  percprof              437 non-null    float64\n 20  poppovertyknown       437 non-null    int64  \n 21  percpovertyknown      437 non-null    float64\n 22  percbelowpoverty      437 non-null    float64\n 23  percchildbelowpovert  437 non-null    float64\n 24  percadultpoverty      437 non-null    float64\n 25  percelderlypoverty    437 non-null    float64\n 26  inmetro               437 non-null    int64  \n 27  category              437 non-null    object \ndtypes: float64(15), int64(10), object(3)\nmemory usage: 95.7+ KB\n\n\n\n\n\n\n\n\n\nPID\ncounty\nstate\narea\npoptotal\npopdensity\npopwhite\npopblack\npopamerindian\npopasian\n...\npercollege\npercprof\npoppovertyknown\npercpovertyknown\npercbelowpoverty\npercchildbelowpovert\npercadultpoverty\npercelderlypoverty\ninmetro\ncategory\n\n\n\n\n0\n561\nADAMS\nIL\n0.052\n66090\n1270.961540\n63917\n1702\n98\n249\n...\n19.631392\n4.355859\n63628\n96.274777\n13.151443\n18.011717\n11.009776\n12.443812\n0\nAAR\n\n\n1\n562\nALEXANDER\nIL\n0.014\n10626\n759.000000\n7054\n3496\n19\n48\n...\n11.243308\n2.870315\n10529\n99.087145\n32.244278\n45.826514\n27.385647\n25.228976\n0\nLHR\n\n\n2\n563\nBOND\nIL\n0.022\n14991\n681.409091\n14477\n429\n35\n16\n...\n17.033819\n4.488572\n14235\n94.956974\n12.068844\n14.036061\n10.852090\n12.697410\n0\nAAR\n\n\n3\n564\nBOONE\nIL\n0.017\n30806\n1812.117650\n29344\n127\n46\n150\n...\n17.278954\n4.197800\n30337\n98.477569\n7.209019\n11.179536\n5.536013\n6.217047\n1\nALU\n\n\n4\n565\nBROWN\nIL\n0.018\n5836\n324.222222\n5264\n547\n14\n5\n...\n14.475999\n3.367680\n4815\n82.505140\n13.520249\n13.022889\n11.143211\n19.200000\n0\nAAR\n\n\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n\n\n432\n3048\nWAUKESHA\nWI\n0.034\n304715\n8962.205880\n298313\n1096\n672\n2699\n...\n35.396784\n7.667090\n299802\n98.387674\n3.121060\n3.785820\n2.590061\n4.085479\n1\nHLU\n\n\n433\n3049\nWAUPACA\nWI\n0.045\n46104\n1024.533330\n45695\n22\n125\n92\n...\n16.549869\n3.138596\n44412\n96.330036\n8.488697\n10.071411\n6.953799\n10.338641\n0\nAAR\n\n\n434\n3050\nWAUSHARA\nWI\n0.037\n19385\n523.918919\n19094\n29\n70\n43\n...\n15.064584\n2.620907\n19163\n98.854785\n13.786985\n20.050708\n11.695784\n11.804558\n0\nAAR\n\n\n435\n3051\nWINNEBAGO\nWI\n0.035\n140320\n4009.142860\n136822\n697\n685\n1728\n...\n24.995504\n5.659847\n133950\n95.460376\n8.804031\n10.592031\n8.660587\n6.661094\n1\nHAU\n\n\n436\n3052\nWOOD\nWI\n0.048\n73605\n1533.437500\n72157\n90\n481\n722\n...\n21.666382\n4.583725\n72685\n98.750085\n8.525831\n11.162997\n7.375656\n7.882918\n0\nAAR\n\n\n\n\n437 rows × 28 columns"
+  },
+  {
+    "objectID": "posts/hw1/index.html#poptotal-변수를-total로-popasian-변수를-asian으로-수정하세요.",
+    "href": "posts/hw1/index.html#poptotal-변수를-total로-popasian-변수를-asian으로-수정하세요.",
+    "title": "homework1",
+    "section": "poptotal 변수를 total로, popasian 변수를 asian으로 수정하세요.",
+    "text": "poptotal 변수를 total로, popasian 변수를 asian으로 수정하세요.\n\ndf_new = df_new.rename(columns = {'poptotal' : 'total'})\ndf_new = df_new.rename(columns = {'popasian' : 'asian'})"
+  },
+  {
+    "objectID": "posts/hw1/index.html#total-asian-변수를-이용해-전체-인구-대비-아시아-인구-백분율-파생변수를-추가하고-히스토그그램을-만들어-분포를-살펴보세요.",
+    "href": "posts/hw1/index.html#total-asian-변수를-이용해-전체-인구-대비-아시아-인구-백분율-파생변수를-추가하고-히스토그그램을-만들어-분포를-살펴보세요.",
+    "title": "homework1",
+    "section": "total, asian 변수를 이용해 ‘전체 인구 대비 아시아 인구 백분율’ 파생변수를 추가하고, 히스토그그램을 만들어 분포를 살펴보세요.",
+    "text": "total, asian 변수를 이용해 ‘전체 인구 대비 아시아 인구 백분율’ 파생변수를 추가하고, 히스토그그램을 만들어 분포를 살펴보세요.\n\ndf_new[\"asian_percentage\"] = df_new[\"asian\"] / df_new[\"total\"] * 100\n\nplt.figure(figsize=(8,6))\ndf_new[\"asian_percentage\"].plot.hist()\nplt.title(\"Hist of Asian Percentage\")\nplt.show()"
+  },
+  {
+    "objectID": "posts/hw1/index.html#아시아-인구-백분율-전체-평균을-구하고-평균을-초과하면-large-그-외에는-small을-부여한-파생변수를-만들어보세요.",
+    "href": "posts/hw1/index.html#아시아-인구-백분율-전체-평균을-구하고-평균을-초과하면-large-그-외에는-small을-부여한-파생변수를-만들어보세요.",
+    "title": "homework1",
+    "section": "아시아 인구 백분율 전체 평균을 구하고, 평균을 초과하면 ‘large’, 그 외에는 ’small’을 부여한 파생변수를 만들어보세요.",
+    "text": "아시아 인구 백분율 전체 평균을 구하고, 평균을 초과하면 ‘large’, 그 외에는 ’small’을 부여한 파생변수를 만들어보세요.\n\ndf_new[\"asian_total\"] = sum(df_new[\"asian_percentage\"])\n\nmean_m = np.mean(df_new[\"asian_percentage\"])\n\ndf_new['size'] = np.where(df_new[\"asian_percentage\"] &gt; mean_m,'large', 'small') \n\nprint(df_new['size'].value_counts())\n\nsize\nsmall    318\nlarge    119\nName: count, dtype: int64"
+  },
+  {
+    "objectID": "posts/hw1/index.html#large와-small에-해당하는-지역이-얼마나-많은지-빈도표와-빈도-막대-그래프를-만들어-확인해-보세요.",
+    "href": "posts/hw1/index.html#large와-small에-해당하는-지역이-얼마나-많은지-빈도표와-빈도-막대-그래프를-만들어-확인해-보세요.",
+    "title": "homework1",
+    "section": "’large’와 ’small’에 해당하는 지역이 얼마나 많은지 빈도표와 빈도 막대 그래프를 만들어 확인해 보세요.",
+    "text": "’large’와 ’small’에 해당하는 지역이 얼마나 많은지 빈도표와 빈도 막대 그래프를 만들어 확인해 보세요.\n\nplt.figure(figsize=(8, 6))\ncount_test = df_new['size'].value_counts()\ncount_test.plot.bar(rot = 0)\nplt.title('Frequency of Size')\nplt.show()"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Go_Younha",
+    "section": "",
+    "text": "-사건의 지평선 너머로-"
+  },
+  {
+    "objectID": "posts/hw2/index.html#p",
+    "href": "posts/hw2/index.html#p",
+    "title": "homework2",
+    "section": "144p",
+    "text": "144p"
+  },
+  {
+    "objectID": "posts/hw2/index.html#q1-자동차-배기량에-따라-고속도로-연비가-다른지-알아보려고-합니다.-배기량이-4이하인-자동차와-5-이상인-자동차-중-어떤-자동차의-고속도로-연비-평균이-더-높은지-알아보세요.",
+    "href": "posts/hw2/index.html#q1-자동차-배기량에-따라-고속도로-연비가-다른지-알아보려고-합니다.-배기량이-4이하인-자동차와-5-이상인-자동차-중-어떤-자동차의-고속도로-연비-평균이-더-높은지-알아보세요.",
+    "title": "homework2",
+    "section": "Q1) 자동차 배기량에 따라 고속도로 연비가 다른지 알아보려고 합니다. 배기량이 4이하인 자동차와 5 이상인 자동차 중 어떤 자동차의 고속도로 연비 평균이 더 높은지 알아보세요.",
+    "text": "Q1) 자동차 배기량에 따라 고속도로 연비가 다른지 알아보려고 합니다. 배기량이 4이하인 자동차와 5 이상인 자동차 중 어떤 자동차의 고속도로 연비 평균이 더 높은지 알아보세요.\n\nimport pandas as pd\n\ndf_raw = pd.read_csv('data/mpg.csv')\nmpg = df_raw.copy()\n\nlowdispl = mpg.query('displ &lt;= 4')\nhighdispl = mpg.query('displ &gt;= 5')\n\na = lowdispl['hwy'].mean()\nb = highdispl['hwy'].mean()\n\nprint(\"배기량이 4이하인 자동차의 고속도로 연비 평균은 배기량이 5 이상인 자동차보다 높다:\" , a &gt; b)\n\n배기량이 4이하인 자동차의 고속도로 연비 평균은 배기량이 5 이상인 자동차보다 높다: True"
+  },
+  {
+    "objectID": "posts/hw2/index.html#q2-자동차-제조-회사에-따라-도시-연비가-어떻게-다른지-알아보려고-합니다.-audi와-toyota-중-어느-자동차-제조-회사의-도시-연비-평균이-더-높은지-알아보세요.",
+    "href": "posts/hw2/index.html#q2-자동차-제조-회사에-따라-도시-연비가-어떻게-다른지-알아보려고-합니다.-audi와-toyota-중-어느-자동차-제조-회사의-도시-연비-평균이-더-높은지-알아보세요.",
+    "title": "homework2",
+    "section": "Q2 자동차 제조 회사에 따라 도시 연비가 어떻게 다른지 알아보려고 합니다. ‘audi’와 ’toyota’ 중 어느 자동차 제조 회사의 도시 연비 평균이 더 높은지 알아보세요.",
+    "text": "Q2 자동차 제조 회사에 따라 도시 연비가 어떻게 다른지 알아보려고 합니다. ‘audi’와 ’toyota’ 중 어느 자동차 제조 회사의 도시 연비 평균이 더 높은지 알아보세요.\n\naudi = mpg.query(\"manufacturer == 'audi'\")\ntoyota = mpg.query(\"manufacturer == 'toyota'\")\n\nc = audi['cty'].mean()\nd = toyota['cty'].mean()\n\nprint(\"'toyota'의 도시 연비 평균은 'audi'보다 높다 :\" , d &gt; c)\n\n'toyota'의 도시 연비 평균은 'audi'보다 높다 : True"
+  },
+  {
+    "objectID": "posts/hw2/index.html#q3-chevrolet-ford-honda-자동차의-고속도로-연비-평균을-알아보려고-합니다.-세-회사의-데이터를-추출한-다음-hwy-전체-평균을-구해-보세요.-여러-조건-중-하나-충족하면-추출-이후-평균-in-사용",
+    "href": "posts/hw2/index.html#q3-chevrolet-ford-honda-자동차의-고속도로-연비-평균을-알아보려고-합니다.-세-회사의-데이터를-추출한-다음-hwy-전체-평균을-구해-보세요.-여러-조건-중-하나-충족하면-추출-이후-평균-in-사용",
+    "title": "homework2",
+    "section": "Q3 ‘chevrolet’, ‘ford’, ‘honda’ 자동차의 고속도로 연비 평균을 알아보려고 합니다. 세 회사의 데이터를 추출한 다음 hwy 전체 평균을 구해 보세요. (여러 조건 중 하나 충족하면 추출) 이후 평균, in 사용",
+    "text": "Q3 ‘chevrolet’, ‘ford’, ‘honda’ 자동차의 고속도로 연비 평균을 알아보려고 합니다. 세 회사의 데이터를 추출한 다음 hwy 전체 평균을 구해 보세요. (여러 조건 중 하나 충족하면 추출) 이후 평균, in 사용\n\nhwy_three = mpg.query(\"manufacturer in ['chevrolet', 'ford', 'honda']\")\navg_hwy = hwy_three['hwy'].mean()\navg_hwy\n\nnp.float64(22.50943396226415)"
+  },
+  {
+    "objectID": "posts/hw2/index.html#p-1",
+    "href": "posts/hw2/index.html#p-1",
+    "title": "homework2",
+    "section": "153p",
+    "text": "153p"
+  },
+  {
+    "objectID": "posts/hw2/index.html#mpg-데이터를-이용해-분석-문제를-해결해-보세요.",
+    "href": "posts/hw2/index.html#mpg-데이터를-이용해-분석-문제를-해결해-보세요.",
+    "title": "homework2",
+    "section": "mpg 데이터를 이용해 분석 문제를 해결해 보세요.",
+    "text": "mpg 데이터를 이용해 분석 문제를 해결해 보세요."
+  },
+  {
+    "objectID": "posts/hw2/index.html#q1-audi에서-생산한-자동차-중에-어떤-자동차-모델의-고속도로-연비가-높은지-알아보려고-합니다.-audi에서-생산한-자동차-중-hwy가-15위에-해당하는-자동차의-데이터를-출력하세요.",
+    "href": "posts/hw2/index.html#q1-audi에서-생산한-자동차-중에-어떤-자동차-모델의-고속도로-연비가-높은지-알아보려고-합니다.-audi에서-생산한-자동차-중-hwy가-15위에-해당하는-자동차의-데이터를-출력하세요.",
+    "title": "homework2",
+    "section": "Q1 ’audi’에서 생산한 자동차 중에 어떤 자동차 모델의 고속도로 연비가 높은지 알아보려고 합니다. ’audi’에서 생산한 자동차 중 hwy가 1~5위에 해당하는 자동차의 데이터를 출력하세요.",
+    "text": "Q1 ’audi’에서 생산한 자동차 중에 어떤 자동차 모델의 고속도로 연비가 높은지 알아보려고 합니다. ’audi’에서 생산한 자동차 중 hwy가 1~5위에 해당하는 자동차의 데이터를 출력하세요.\n\nimport pandas as pd\n\ndf_raw = pd.read_csv('data/mpg.csv')\nmpg = df_raw.copy()\n\na = mpg.query(\"manufacturer == 'audi'\")\nb = a.sort_values('hwy', ascending = False)\nb.head(5)\n\n\n\n\n\n\n\n\nmanufacturer\nmodel\ndispl\nyear\ncyl\ntrans\ndrv\ncty\nhwy\nfl\ncategory\n\n\n\n\n2\naudi\na4\n2.0\n2008\n4\nmanual(m6)\nf\n20\n31\np\ncompact\n\n\n3\naudi\na4\n2.0\n2008\n4\nauto(av)\nf\n21\n30\np\ncompact\n\n\n1\naudi\na4\n1.8\n1999\n4\nmanual(m5)\nf\n21\n29\np\ncompact\n\n\n0\naudi\na4\n1.8\n1999\n4\nauto(l5)\nf\n18\n29\np\ncompact\n\n\n9\naudi\na4 quattro\n2.0\n2008\n4\nmanual(m6)\n4\n20\n28\np\ncompact"
+  },
+  {
+    "objectID": "posts/hw2/index.html#p-2",
+    "href": "posts/hw2/index.html#p-2",
+    "title": "homework2",
+    "section": "158p",
+    "text": "158p"
+  },
+  {
+    "objectID": "posts/hw2/index.html#mpg-데이터를-이용해-분석-문제를-해결해-보세요.-1",
+    "href": "posts/hw2/index.html#mpg-데이터를-이용해-분석-문제를-해결해-보세요.-1",
+    "title": "homework2",
+    "section": "mpg 데이터를 이용해 분석 문제를 해결해 보세요.",
+    "text": "mpg 데이터를 이용해 분석 문제를 해결해 보세요."
+  },
+  {
+    "objectID": "posts/hw2/index.html#q1-mpg-데이터-복사본을-만들고-cty와-hwy를-더한-합산-연비-변수를-출력하세요.",
+    "href": "posts/hw2/index.html#q1-mpg-데이터-복사본을-만들고-cty와-hwy를-더한-합산-연비-변수를-출력하세요.",
+    "title": "homework2",
+    "section": "Q1) mpg 데이터 복사본을 만들고, cty와 hwy를 더한 ’합산 연비 변수’를 출력하세요.",
+    "text": "Q1) mpg 데이터 복사본을 만들고, cty와 hwy를 더한 ’합산 연비 변수’를 출력하세요.\n\nimport pandas as pd\n\ndf_raw = pd.read_csv('data/mpg.csv')\nmpg = df_raw.copy()\n\nmpg = mpg.assign(total = mpg['cty'] + mpg['hwy'])\nmpg\n\n\n\n\n\n\n\n\nmanufacturer\nmodel\ndispl\nyear\ncyl\ntrans\ndrv\ncty\nhwy\nfl\ncategory\ntotal\n\n\n\n\n0\naudi\na4\n1.8\n1999\n4\nauto(l5)\nf\n18\n29\np\ncompact\n47\n\n\n1\naudi\na4\n1.8\n1999\n4\nmanual(m5)\nf\n21\n29\np\ncompact\n50\n\n\n2\naudi\na4\n2.0\n2008\n4\nmanual(m6)\nf\n20\n31\np\ncompact\n51\n\n\n3\naudi\na4\n2.0\n2008\n4\nauto(av)\nf\n21\n30\np\ncompact\n51\n\n\n4\naudi\na4\n2.8\n1999\n6\nauto(l5)\nf\n16\n26\np\ncompact\n42\n\n\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n\n\n229\nvolkswagen\npassat\n2.0\n2008\n4\nauto(s6)\nf\n19\n28\np\nmidsize\n47\n\n\n230\nvolkswagen\npassat\n2.0\n2008\n4\nmanual(m6)\nf\n21\n29\np\nmidsize\n50\n\n\n231\nvolkswagen\npassat\n2.8\n1999\n6\nauto(l5)\nf\n16\n26\np\nmidsize\n42\n\n\n232\nvolkswagen\npassat\n2.8\n1999\n6\nmanual(m5)\nf\n18\n26\np\nmidsize\n44\n\n\n233\nvolkswagen\npassat\n3.6\n2008\n6\nauto(s6)\nf\n17\n26\np\nmidsize\n43\n\n\n\n\n234 rows × 12 columns"
+  },
+  {
+    "objectID": "posts/hw2/index.html#q2-앞에서-만든-합산-연비-변수를-2로-나눠-평균-연비-변수를-추가하세요.",
+    "href": "posts/hw2/index.html#q2-앞에서-만든-합산-연비-변수를-2로-나눠-평균-연비-변수를-추가하세요.",
+    "title": "homework2",
+    "section": "Q2) 앞에서 만든 ’합산 연비 변수’를 2로 나눠 ’평균 연비 변수를 추가하세요.",
+    "text": "Q2) 앞에서 만든 ’합산 연비 변수’를 2로 나눠 ’평균 연비 변수를 추가하세요.\n\nmpg = mpg.assign(avg = mpg[\"total\"] / 2)\nmpg\n\n\n\n\n\n\n\n\nmanufacturer\nmodel\ndispl\nyear\ncyl\ntrans\ndrv\ncty\nhwy\nfl\ncategory\ntotal\navg\n\n\n\n\n0\naudi\na4\n1.8\n1999\n4\nauto(l5)\nf\n18\n29\np\ncompact\n47\n23.5\n\n\n1\naudi\na4\n1.8\n1999\n4\nmanual(m5)\nf\n21\n29\np\ncompact\n50\n25.0\n\n\n2\naudi\na4\n2.0\n2008\n4\nmanual(m6)\nf\n20\n31\np\ncompact\n51\n25.5\n\n\n3\naudi\na4\n2.0\n2008\n4\nauto(av)\nf\n21\n30\np\ncompact\n51\n25.5\n\n\n4\naudi\na4\n2.8\n1999\n6\nauto(l5)\nf\n16\n26\np\ncompact\n42\n21.0\n\n\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n\n\n229\nvolkswagen\npassat\n2.0\n2008\n4\nauto(s6)\nf\n19\n28\np\nmidsize\n47\n23.5\n\n\n230\nvolkswagen\npassat\n2.0\n2008\n4\nmanual(m6)\nf\n21\n29\np\nmidsize\n50\n25.0\n\n\n231\nvolkswagen\npassat\n2.8\n1999\n6\nauto(l5)\nf\n16\n26\np\nmidsize\n42\n21.0\n\n\n232\nvolkswagen\npassat\n2.8\n1999\n6\nmanual(m5)\nf\n18\n26\np\nmidsize\n44\n22.0\n\n\n233\nvolkswagen\npassat\n3.6\n2008\n6\nauto(s6)\nf\n17\n26\np\nmidsize\n43\n21.5\n\n\n\n\n234 rows × 13 columns"
+  },
+  {
+    "objectID": "posts/hw2/index.html#q3-평균-연비-변수가-가장-높은-자동차-3종의-데이터를-출력하세요.",
+    "href": "posts/hw2/index.html#q3-평균-연비-변수가-가장-높은-자동차-3종의-데이터를-출력하세요.",
+    "title": "homework2",
+    "section": "Q3) ’평균 연비 변수’가 가장 높은 자동차 3종의 데이터를 출력하세요.",
+    "text": "Q3) ’평균 연비 변수’가 가장 높은 자동차 3종의 데이터를 출력하세요.\n\na = mpg.sort_values('avg', ascending = False)\na.head(3)\n\n\n\n\n\n\n\n\nmanufacturer\nmodel\ndispl\nyear\ncyl\ntrans\ndrv\ncty\nhwy\nfl\ncategory\ntotal\navg\n\n\n\n\n221\nvolkswagen\nnew beetle\n1.9\n1999\n4\nmanual(m5)\nf\n35\n44\nd\nsubcompact\n79\n39.5\n\n\n212\nvolkswagen\njetta\n1.9\n1999\n4\nmanual(m5)\nf\n33\n44\nd\ncompact\n77\n38.5\n\n\n222\nvolkswagen\nnew beetle\n1.9\n1999\n4\nauto(l4)\nf\n29\n41\nd\nsubcompact\n70\n35.0"
+  },
+  {
+    "objectID": "posts/hw2/index.html#q4-13번-문제를-해결할-수-있는-하나로-연결된-pandas-구문을-만들어-실행해-보세요.-데이터는-복사본-대신-mpg-원본을-이용하세요.",
+    "href": "posts/hw2/index.html#q4-13번-문제를-해결할-수-있는-하나로-연결된-pandas-구문을-만들어-실행해-보세요.-데이터는-복사본-대신-mpg-원본을-이용하세요.",
+    "title": "homework2",
+    "section": "Q4) 1~3번 문제를 해결할 수 있는 하나로 연결된 pandas 구문을 만들어 실행해 보세요. 데이터는 복사본 대신 mpg 원본을 이용하세요.",
+    "text": "Q4) 1~3번 문제를 해결할 수 있는 하나로 연결된 pandas 구문을 만들어 실행해 보세요. 데이터는 복사본 대신 mpg 원본을 이용하세요.\n\nimport pandas as pd\n\ndf = pd.read_csv('data/mpg.csv')\n\ndf = df.assign(total = lambda x: x['cty'] + x['hwy'],\n               avg   = lambda x: x['total'] / 2)\n\nmpg.sort_values('avg', ascending = False).head(3)\n\n\n\n\n\n\n\n\nmanufacturer\nmodel\ndispl\nyear\ncyl\ntrans\ndrv\ncty\nhwy\nfl\ncategory\ntotal\navg\n\n\n\n\n221\nvolkswagen\nnew beetle\n1.9\n1999\n4\nmanual(m5)\nf\n35\n44\nd\nsubcompact\n79\n39.5\n\n\n212\nvolkswagen\njetta\n1.9\n1999\n4\nmanual(m5)\nf\n33\n44\nd\ncompact\n77\n38.5\n\n\n222\nvolkswagen\nnew beetle\n1.9\n1999\n4\nauto(l4)\nf\n29\n41\nd\nsubcompact\n70\n35.0"
+  },
+  {
+    "objectID": "posts/hw4/index.html#정규분포-pdf-값을-계산하는-자신만의-파이썬-함수를-정의하고-정규분포-mu-3-sigma-2-의-pdf를-그릴-것.",
+    "href": "posts/hw4/index.html#정규분포-pdf-값을-계산하는-자신만의-파이썬-함수를-정의하고-정규분포-mu-3-sigma-2-의-pdf를-그릴-것.",
+    "title": "homework4",
+    "section": "1. 정규분포 pdf 값을 계산하는 자신만의 파이썬 함수를 정의하고, 정규분포 mu = 3, sigma = 2 의 pdf를 그릴 것.",
+    "text": "1. 정규분포 pdf 값을 계산하는 자신만의 파이썬 함수를 정의하고, 정규분포 mu = 3, sigma = 2 의 pdf를 그릴 것.\n\nimport numpy as np\nimport math\nimport matplotlib.pyplot as plt\n\n\ndef nd(x, mu, std):\n    return (1/(std * np.sqrt(2 * math.pi))) * math.exp((-1/2) * ((x - mu)/std)**2) \n\nlist = []\nfor x in np.linspace(-3, 9, 1000):\n    list.append(nd(x,3,2))\n\nplt.plot(np.linspace(-3, 9, 1000), np.array(list))\nplt.show()"
+  },
+  {
+    "objectID": "posts/hw4/index.html#파이썬-scipy-패키지-사용해서-다음과-같은확률을-구하시오.",
+    "href": "posts/hw4/index.html#파이썬-scipy-패키지-사용해서-다음과-같은확률을-구하시오.",
+    "title": "homework4",
+    "section": "2. 파이썬 scipy 패키지 사용해서 다음과 같은확률을 구하시오.",
+    "text": "2. 파이썬 scipy 패키지 사용해서 다음과 같은확률을 구하시오.\nX ~ N(2, 3^2)\n\n1) P(X &lt; 3)\n\nfrom scipy.stats import norm\nnorm.cdf(3, 2, 3)\n\nnp.float64(0.6305586598182363)\n\n\n\n\n2) P(2 &lt; X &lt; 5)\n\nnorm.cdf(5, 2, 3) - norm.cdf(2, 2, 3)\n\nnp.float64(0.3413447460685429)\n\n\n\n\n3) P(X &lt; 3 or X &gt; 7)\n\n1 - (norm.cdf(7, 2, 3) - norm.cdf(3, 2, 3))\n\nnp.float64(0.678349012091051)"
+  },
+  {
+    "objectID": "posts/hw4/index.html#ls-빅데이터-스쿨-학생들의-중간고사-점수는-평균이-30이고-분산이-4인-정규분포를-따른다.-상위-5에-해당하는-학생의-점수는",
+    "href": "posts/hw4/index.html#ls-빅데이터-스쿨-학생들의-중간고사-점수는-평균이-30이고-분산이-4인-정규분포를-따른다.-상위-5에-해당하는-학생의-점수는",
+    "title": "homework4",
+    "section": "3. LS 빅데이터 스쿨 학생들의 중간고사 점수는 평균이 30이고, 분산이 4인 정규분포를 따른다. 상위 5%에 해당하는 학생의 점수는?",
+    "text": "3. LS 빅데이터 스쿨 학생들의 중간고사 점수는 평균이 30이고, 분산이 4인 정규분포를 따른다. 상위 5%에 해당하는 학생의 점수는?\n\nfrom scipy.stats import norm\n\na = norm.ppf(0.95, 30, 2)\nprint(\"상위 5% 학생의 점수는 \" + str(a) + \"입니다\")\n\n상위 5% 학생의 점수는 33.28970725390295입니다"
+  },
+  {
+    "objectID": "posts/hw6/index.html#챕터-9-2-설문조사-그래프에서-각-성별-95-신뢰구간-계산후-그리기-norm.ppf-사용해서-그릴-것.-모분산은-표본-분산을-사용해서-추정-위-아래-수직-막대기로-표시-아래-그림-참조",
+    "href": "posts/hw6/index.html#챕터-9-2-설문조사-그래프에서-각-성별-95-신뢰구간-계산후-그리기-norm.ppf-사용해서-그릴-것.-모분산은-표본-분산을-사용해서-추정-위-아래-수직-막대기로-표시-아래-그림-참조",
+    "title": "homework6",
+    "section": "챕터 9-2 설문조사 그래프에서 각 성별 95% 신뢰구간 계산후 그리기 norm.ppf() 사용해서 그릴 것. 모분산은 표본 분산을 사용해서 추정, 위 아래 수직 막대기로 표시 (아래 그림 참조)",
+    "text": "챕터 9-2 설문조사 그래프에서 각 성별 95% 신뢰구간 계산후 그리기 norm.ppf() 사용해서 그릴 것. 모분산은 표본 분산을 사용해서 추정, 위 아래 수직 막대기로 표시 (아래 그림 참조)\n\n#!pip install pyreadstat\nimport pandas as pd\nimport numpy as np\nimport seaborn as sns\nfrom scipy.stats import norm\nimport matplotlib.pyplot as plt\n\n\nraw_welfare = pd.read_spss(('data/Koweps_hpwc14_2019_beta2.sav'))\nraw_welfare\n\nwelfare = raw_welfare.copy()\n\nwelfare = welfare.rename(\n    columns = {'h14_g3'     : 'sex',\n               'h14_g4'     : 'birth',\n               'h14_g10'    : 'marriage_type',\n               'h14_g11'    : 'religion',\n               'p1402_8aq1' : 'income',\n               'h14_eco9'   : 'code_job',\n               'h14_reg7'   : 'code_region'})\n               \nwelfare['sex'] = np.where(welfare['sex'] == 1, 'male', 'female')\nwelfare['sex'].value_counts()\n\nsex\nfemale    7913\nmale      6505\nName: count, dtype: int64\n\n\n\nwelfare['income'].describe()\nwelfare['income'].isna().sum()\n\nsex_income = welfare.dropna(subset = 'income') \\\n                    .groupby('sex', as_index = False) \\\n                    .agg(mean_income = ('income', 'mean'),\n                         var_income = (\"income\",'var'),\n                         len_income = (\"income\",\"count\"))\n                         \nsex_income[\"left_ci\"] = sex_income[\"mean_income\"]- (norm.ppf(0.975, 0, 1) * np.sqrt(sex_income[\"var_income\"]/(sex_income[\"len_income\"])))\n\nsex_income[\"right_ci\"] = sex_income[\"mean_income\"] + (norm.ppf(0.975, 0, 1) * np.sqrt(sex_income[\"var_income\"]/(sex_income[\"len_income\"])))\n\nsex_income[\"left_ci\"]\nsex_income[\"right_ci\"]\n\nsns.barplot(data = sex_income, x = 'sex', y = 'mean_income', hue = 'sex')\n\nplt.vlines(x=0, ymin=sex_income['left_ci'][0], ymax=sex_income['right_ci'][0], color='black', linewidth=4)\nplt.vlines(x=1, ymin=sex_income['left_ci'][1], ymax=sex_income['right_ci'][1], color='black', linewidth=4)\nplt.show()\nplt.clf()\n\n\n\n\n\n\n\n\n&lt;Figure size 672x480 with 0 Axes&gt;"
+  },
+  {
+    "objectID": "posts/hw8/index.html#평균이-30-표준편차가-5인-정규분포를-따른다.",
+    "href": "posts/hw8/index.html#평균이-30-표준편차가-5인-정규분포를-따른다.",
+    "title": "homework8",
+    "section": "평균이 30, 표준편차가 5인 정규분포를 따른다.",
+    "text": "평균이 30, 표준편차가 5인 정규분포를 따른다."
+  },
+  {
+    "objectID": "posts/hw8/index.html#adp-실기-시험의-통계파트-표준점수의-밀도함수를-그려보세요.",
+    "href": "posts/hw8/index.html#adp-실기-시험의-통계파트-표준점수의-밀도함수를-그려보세요.",
+    "title": "homework8",
+    "section": "1 ADP 실기 시험의 통계파트 표준점수의 밀도함수를 그려보세요.",
+    "text": "1 ADP 실기 시험의 통계파트 표준점수의 밀도함수를 그려보세요.\n\nimport numpy as np\nfrom scipy.stats import norm\nimport matplotlib.pyplot as plt\n\na = np.linspace(15, 45, 200)\nb = norm.pdf(a, 30, 5)\n\nplt.plot(a, b)\nplt.show()"
+  },
+  {
+    "objectID": "posts/hw8/index.html#adp-수험생을-임의로-1명-선택하여-통계-점수를-조회했을때-45점-보다-높은-점수를-받았을-확률을-구하세요.",
+    "href": "posts/hw8/index.html#adp-수험생을-임의로-1명-선택하여-통계-점수를-조회했을때-45점-보다-높은-점수를-받았을-확률을-구하세요.",
+    "title": "homework8",
+    "section": "2 ADP 수험생을 임의로 1명 선택하여 통계 점수를 조회했을때 45점 보다 높은 점수를 받았을 확률을 구하세요.",
+    "text": "2 ADP 수험생을 임의로 1명 선택하여 통계 점수를 조회했을때 45점 보다 높은 점수를 받았을 확률을 구하세요.\n\na = 1 - norm.cdf(45, 30, 5)\na\n\nnp.float64(0.0013498980316301035)"
+  },
+  {
+    "objectID": "posts/hw8/index.html#슬통이는-상위-10에-해당하는-점수를-얻었다고-한다면-슬통이의-점수는-얼마인지-계산해보세요.",
+    "href": "posts/hw8/index.html#슬통이는-상위-10에-해당하는-점수를-얻었다고-한다면-슬통이의-점수는-얼마인지-계산해보세요.",
+    "title": "homework8",
+    "section": "3 슬통이는 상위 10%에 해당하는 점수를 얻었다고 한다면, 슬통이의 점수는 얼마인지 계산해보세요.",
+    "text": "3 슬통이는 상위 10%에 해당하는 점수를 얻었다고 한다면, 슬통이의 점수는 얼마인지 계산해보세요.\n\na = norm.ppf(0.9, 30, 5)\na\n\nnp.float64(36.407757827723)"
+  },
+  {
+    "objectID": "posts/hw8/index.html#슬기로운-통계생활의-해당-회차-수강생은-16명이었다고-한다.-16명의-통계-파트-점수를-평균을-내었을-때-이-평균값이-따르는-분포의-확률밀도-함수를-1번의-그래프와-겹쳐-그려보세요.",
+    "href": "posts/hw8/index.html#슬기로운-통계생활의-해당-회차-수강생은-16명이었다고-한다.-16명의-통계-파트-점수를-평균을-내었을-때-이-평균값이-따르는-분포의-확률밀도-함수를-1번의-그래프와-겹쳐-그려보세요.",
+    "title": "homework8",
+    "section": "4 슬기로운 통계생활의 해당 회차 수강생은 16명이었다고 한다. 16명의 통계 파트 점수를 평균을 내었을 때, 이 평균값이 따르는 분포의 확률밀도 함수를 1번의 그래프와 겹쳐 그려보세요.",
+    "text": "4 슬기로운 통계생활의 해당 회차 수강생은 16명이었다고 한다. 16명의 통계 파트 점수를 평균을 내었을 때, 이 평균값이 따르는 분포의 확률밀도 함수를 1번의 그래프와 겹쳐 그려보세요.\n\nimport numpy as np\nfrom scipy.stats import norm\nimport matplotlib.pyplot as plt\n\na = np.linspace(15, 45, 200)\nb = norm.pdf(a, 30, 5)\n\nc = np.linspace(15, 45, 200)\nd = norm.pdf(c, 30, 5/4)\n\nplt.plot(a, b, label = 'Population')\nplt.plot(c, d, label = 'Average')\n\nplt.legend()\n\nplt.show()"
+  },
+  {
+    "objectID": "posts/hw8/index.html#슬기로운-통계생활-adp-반-수강생들의-통계점수를-평균내었다고-할-때-이-값이-38점보다-높게-나올-확률을-구하세요.",
+    "href": "posts/hw8/index.html#슬기로운-통계생활-adp-반-수강생들의-통계점수를-평균내었다고-할-때-이-값이-38점보다-높게-나올-확률을-구하세요.",
+    "title": "homework8",
+    "section": "5 슬기로운 통계생활 ADP 반 수강생들의 통계점수를 평균내었다고 할 때, 이 값이 38점보다 높게 나올 확률을 구하세요.",
+    "text": "5 슬기로운 통계생활 ADP 반 수강생들의 통계점수를 평균내었다고 할 때, 이 값이 38점보다 높게 나올 확률을 구하세요.\n\nfrom scipy.stats import norm\n\nd = 1 - norm.cdf(38, 30, 5/4)\nd\n\nnp.float64(7.76885222819601e-11)"
+  },
+  {
+    "objectID": "posts/hw8/index.html#다잡아-키트가-코로나-바이러스에-걸린-사람을-양성으로-잡아낼-확률을-계산하세요.",
+    "href": "posts/hw8/index.html#다잡아-키트가-코로나-바이러스에-걸린-사람을-양성으로-잡아낼-확률을-계산하세요.",
+    "title": "homework8",
+    "section": "1 다잡아 키트가 코로나 바이러스에 걸린 사람을 양성으로 잡아낼 확률을 계산하세요.",
+    "text": "1 다잡아 키트가 코로나 바이러스에 걸린 사람을 양성으로 잡아낼 확률을 계산하세요.\n\n# P(양성|코로나)\n\na = 370/385\na\n\n0.961038961038961"
+  },
+  {
+    "objectID": "posts/hw8/index.html#슬통-회사에서-다잡아-키트를-사용해-양성으로-나온-사람이-실제로는-코로나-바이러스에-걸려-있을-확률을-97라며-키트의-우수성을-주장했다.-이-주장이-옳지-않은-이유를-서술하세요-covid19-발병률을-사용하여-키트의-결과값이-양성으로-나온-사람이-실제로-코로나-바이러스에-걸려있을-확률을-구하세요.",
+    "href": "posts/hw8/index.html#슬통-회사에서-다잡아-키트를-사용해-양성으로-나온-사람이-실제로는-코로나-바이러스에-걸려-있을-확률을-97라며-키트의-우수성을-주장했다.-이-주장이-옳지-않은-이유를-서술하세요-covid19-발병률을-사용하여-키트의-결과값이-양성으로-나온-사람이-실제로-코로나-바이러스에-걸려있을-확률을-구하세요.",
+    "title": "homework8",
+    "section": "2 & 3 슬통 회사에서 다잡아 키트를 사용해 양성으로 나온 사람이 실제로는 코로나 바이러스에 걸려 있을 확률을 97%라며, 키트의 우수성을 주장했다. 이 주장이 옳지 않은 이유를 서술하세요, Covid‑19 발병률을 사용하여, 키트의 결과값이 양성으로 나온 사람이 실제로 코로나 바이러스에 걸려있을 확률을 구하세요.",
+    "text": "2 & 3 슬통 회사에서 다잡아 키트를 사용해 양성으로 나온 사람이 실제로는 코로나 바이러스에 걸려 있을 확률을 97%라며, 키트의 우수성을 주장했다. 이 주장이 옳지 않은 이유를 서술하세요, Covid‑19 발병률을 사용하여, 키트의 결과값이 양성으로 나온 사람이 실제로 코로나 바이러스에 걸려있을 확률을 구하세요.\n\nb = 370/380\nb #0.97\n\n# covid = 실제 코로나 = c\n# pos = 키트 양성 = p \n\n# P(c|p) = P(c) * P(p|c) / P(p)\n\nc = 0.01\n\np_c = 370/385 \np_not_c = 10/700 \n\np = p_c * 0.01 + p_not_c  * 0.99\n\nc_p = (c * p_c) / p\n\nc_p # 키트 양성인 사람 중 코로나 양성 확률 \n\n0.4045926735921268\n\n\n\n97%는 사전 확률이고, 베이즈 정리를 통해 나온 약 40%의 사후 확률이 더 정확한 의미에서의 “양성으로 나온 사람이 실제로는 코로나 바이러스에 걸려있을 확률”이다."
+  },
+  {
+    "objectID": "posts/hw8/index.html#자유도가-4인-카이제곱분포의-확률밀도함수를-그려보세요",
+    "href": "posts/hw8/index.html#자유도가-4인-카이제곱분포의-확률밀도함수를-그려보세요",
+    "title": "homework8",
+    "section": "1 자유도가 4인 카이제곱분포의 확률밀도함수를 그려보세요",
+    "text": "1 자유도가 4인 카이제곱분포의 확률밀도함수를 그려보세요\n\nfrom scipy.stats import chi2\nimport numpy as np\nimport matplotlib.pyplot as plt\n\na = np.linspace(0, 20, 100)\nb = chi2.pdf(a, 4)\n\nplt.plot(a, b)\nplt.show()"
+  },
+  {
+    "objectID": "posts/hw8/index.html#다음의-확률을-구해보세요-p3-x-5",
+    "href": "posts/hw8/index.html#다음의-확률을-구해보세요-p3-x-5",
+    "title": "homework8",
+    "section": "2 다음의 확률을 구해보세요 P(3 <= X <= 5)",
+    "text": "2 다음의 확률을 구해보세요 P(3 &lt;= X &lt;= 5)\n\nright = chi2.cdf(5, 4)\nleft = chi2.cdf(3, 4)\n\nright - left\n\nnp.float64(0.27052790518742903)"
+  },
+  {
+    "objectID": "posts/hw8/index.html#자유도가-4인-카이제곱분포에서-크기가-1000인-표본을-뽑은-후-히스토그램을-그려보세요.",
+    "href": "posts/hw8/index.html#자유도가-4인-카이제곱분포에서-크기가-1000인-표본을-뽑은-후-히스토그램을-그려보세요.",
+    "title": "homework8",
+    "section": "3 자유도가 4인 카이제곱분포에서 크기가 1000인 표본을 뽑은 후, 히스토그램을 그려보세요.",
+    "text": "3 자유도가 4인 카이제곱분포에서 크기가 1000인 표본을 뽑은 후, 히스토그램을 그려보세요.\n\na = chi2.rvs(4, size = 1000)\nplt.hist(a)\nplt.show()"
+  },
+  {
+    "objectID": "posts/hw8/index.html#자유도가-4인-카이제곱분포를-따르는-확률변수에서-나올-수-있는-값-중-상위-5에-해당하는-값은-얼마인지-계산해보세요.",
+    "href": "posts/hw8/index.html#자유도가-4인-카이제곱분포를-따르는-확률변수에서-나올-수-있는-값-중-상위-5에-해당하는-값은-얼마인지-계산해보세요.",
+    "title": "homework8",
+    "section": "4 자유도가 4인 카이제곱분포를 따르는 확률변수에서 나올 수 있는 값 중 상위 5%에 해당하는 값은 얼마인지 계산해보세요.",
+    "text": "4 자유도가 4인 카이제곱분포를 따르는 확률변수에서 나올 수 있는 값 중 상위 5%에 해당하는 값은 얼마인지 계산해보세요.\n\nchi2.ppf(0.95, 4)\n\nnp.float64(9.487729036781154)"
+  },
+  {
+    "objectID": "posts/hw8/index.html#번에서-뽑힌-표본값들-중-상위-5에-위치한-표본의-값은-얼마인가요",
+    "href": "posts/hw8/index.html#번에서-뽑힌-표본값들-중-상위-5에-위치한-표본의-값은-얼마인가요",
+    "title": "homework8",
+    "section": "5 3번에서 뽑힌 표본값들 중 상위 5%에 위치한 표본의 값은 얼마인가요?",
+    "text": "5 3번에서 뽑힌 표본값들 중 상위 5%에 위치한 표본의 값은 얼마인가요?\n\nchi2.ppf(0.9975, 4)\n\nnp.float64(16.423936124136556)"
+  },
+  {
+    "objectID": "posts/hw8/index.html#평균이-3-표준편차가-2인-정규분포를-따르는-확률변수에서-크기가-20인-표본-𝑥1-𝑥20을-뽑은-후-표본분산을-계산한-것을-𝑠21이라-생각해보죠.-다음을-수행해보세요",
+    "href": "posts/hw8/index.html#평균이-3-표준편차가-2인-정규분포를-따르는-확률변수에서-크기가-20인-표본-𝑥1-𝑥20을-뽑은-후-표본분산을-계산한-것을-𝑠21이라-생각해보죠.-다음을-수행해보세요",
+    "title": "homework8",
+    "section": "6 평균이 3, 표준편차가 2인 정규분포를 따르는 확률변수에서 크기가 20인 표본, 𝑥1, …, 𝑥20,을 뽑은 후 표본분산을 계산한 것을 𝑠21이라 생각해보죠. 다음을 수행해보세요!",
+    "text": "6 평균이 3, 표준편차가 2인 정규분포를 따르는 확률변수에서 크기가 20인 표본, 𝑥1, …, 𝑥20,을 뽑은 후 표본분산을 계산한 것을 𝑠21이라 생각해보죠. 다음을 수행해보세요!\n\nstd = []\n\nfor i in range(500):\n    a = norm.rvs(2, 3, 20)\n    a_std = a.std()\n    std.append(a_std)\n\nstd_array = np.array(std)\nstd_array = std_array * 4.75\n\nx = np.linspace(8, 20, 100)\n\nchi = chi2.pdf(x, 19)\n\nplt.hist(std_array, density = True) \nplt.plot(x, chi)\n\nplt.legend()\nplt.show()\n\nC:\\Users\\USER\\AppData\\Local\\Temp\\ipykernel_24432\\1831535740.py:18: UserWarning:\n\nNo artists with labels found to put in legend.  Note that artists whose label start with an underscore are ignored when legend() is called with no argument."
+  },
+  {
+    "objectID": "posts/index.html",
+    "href": "posts/index.html",
+    "title": "Recent posts",
+    "section": "",
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n최저 임금 데이터 분석\n\n\n\nDec 26, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nhomework9\n\n\n\nSep 10, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nhomework8\n\n\n\nSep 3, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nhomework7\n\n\n\nAug 5, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nhomework6\n\n\n\nJul 30, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nhomework5\n\n\n\nJul 29, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nhomework4\n\n\n\nJul 25, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nhomework3\n\n\n\nJul 22, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n교과서 챕터 8\n\n\n\nJul 22, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nhomework1\n\n\n\nJul 12, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nhomework2\n\n\n\nJul 12, 2024\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/project1/index.html",
+    "href": "posts/project1/index.html",
+    "title": "최저 임금 데이터 분석",
+    "section": "",
+    "text": "import pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt    \nimport seaborn as sns\n\nplt.rcParams.update({\"figure.dpi\": 150,\n                     \"figure.figsize\": [8, 6],\n                     \"font.size\": 11,\n                     \"font.family\": \"Malgun Gothic\"})\n\nintro = pd.read_excel(\"data/소비자동향조사.xlsx\")\nplt.figure(figsize = [5.5,4])\nintro[\"year\"]\nsns.lineplot(data=intro, x='year', y='임금수준전망', color='dodgerblue', label='임금수준전망', marker='o')\nsns.lineplot(data=intro, x='year', y='향후경기전망', color='salmon', label='향후경기전망', marker='o')\nsns.lineplot(data=intro, x='year', y='현재경기판단', color='red', label='현재경기판단', marker='o')\nplt.xlabel('Year',fontsize=14)\nplt.ylabel('Percentage(%)',fontsize=14)\nplt.title(\"소비자동향조사\")\nplt.legend(loc = \"lower right\")\nplt.grid()\nplt.show()\n\n\n\n\n\n\n\n\n소비자동향조사에 따르면, 소비자들은 경기를 부정적으로 판단하고 있는데, 그에 반해 임금 수준은 상승할 것이라고 예상한다. 그렇다면 임금은 정말 지속적으로 상승했는지, 소비자들이 임금 상승의 수혜를 제대로 받고 있는지 알아보기 위해 임금 데이터를 바탕으로 분석을 진행하고자 하였다."
+  },
+  {
+    "objectID": "posts/project1/index.html#cpi소비자-물가-지수",
+    "href": "posts/project1/index.html#cpi소비자-물가-지수",
+    "title": "최저 임금 데이터 분석",
+    "section": "CPI(소비자 물가 지수)",
+    "text": "CPI(소비자 물가 지수)\n\n데이터 파일 읽어오기\n\n\nimport pandas as pd\ndf = pd.read_excel(\"data/cpi_2011to2023.xlsx\")\ndf.head()\n\n\n\n\n\n\n\n\n시점\n전국\n전국.1\n전국.2\n전국.3\n전국.4\n전국.5\n전국.6\n전국.7\n전국.8\n...\n전국.141\n전국.142\n전국.143\n전국.144\n전국.145\n전국.146\n전국.147\n전국.148\n전국.149\n전국.150\n\n\n\n\n0\n시점\n총지수\n생활물가지수\n식품\n쌀\n국수\n라면\n두부\n빵\n떡\n...\n미용료\n치약\n샴푸\n화장지\n기초화장품\n보험서비스료\n자동차보험료\n전월세\n생활물가 이외\n전·월세포함 생활물가지수\n\n\n1\n2011\n89.85\n91.997\n83.653\n76.467\n-\n88.315\n89.406\n69.442\n81.75\n...\n78.205\n86.66\n129.914\n102.494\n90.913\n-\n92.538\n85.412\n87.841\n90.988\n\n\n2\n2012\n91.815\n93.562\n85.614\n83.846\n-\n94.881\n90.768\n72.246\n83.81\n...\n81.967\n85.68\n132.54\n105.674\n93.035\n-\n90.755\n89.014\n89.972\n92.886\n\n\n3\n2013\n93.01\n94.238\n86.326\n88.444\n-\n95.367\n96.588\n77.474\n85.572\n...\n85.2\n81.732\n124.058\n105.83\n94.115\n-\n90.137\n91.383\n91.64\n93.815\n\n\n4\n2014\n94.196\n95.031\n86.776\n86.885\n-\n95.444\n97.112\n82.16\n86.886\n...\n89.075\n91.295\n124.032\n103.967\n97.776\n-\n90.137\n93.527\n93.167\n94.807\n\n\n\n\n5 rows × 152 columns\n\n\n\n\n컬럼명 변경, 행 제거, 특정 컬럼 추출\n\n\ndf.rename(columns = {'시점':\"year\",\"전국\" : \"cpi\",\"전국.2\":\"food_cpi\"},inplace=True)\ndf.drop(0,inplace=True) \ndf=df[['year','cpi','food_cpi']]\ndf.reset_index(drop=True,inplace=True)\n\n\ninplace = True\ndf.drop(0,inplace=True) 와 df = df.drop(0) 같은 의미이다.\nreset_index(drop=True)\n인덱스 번호를 초기화하는 함수로 drop=True 해야 전 인덱스 번호가 사라진다.\n최저시급 열 추가\n\n\nlist = [\"4,320\",\"4,580\",\"4,860\",\"5,210\",\"5,580\",\"6,030\",\"6,470\",\\\n        \"7,530\",\"8,350\",\"8,590\",\"8,720\",\"9,160\",\"9,620\"]\ndf['min_wage'] = np.array(list)\ndf = df[['year',\"min_wage\", 'cpi', 'food_cpi']]\ndf.head()\n\n\n\n\n\n\n\n\nyear\nmin_wage\ncpi\nfood_cpi\n\n\n\n\n0\n2011\n4,320\n89.85\n83.653\n\n\n1\n2012\n4,580\n91.815\n85.614\n\n\n2\n2013\n4,860\n93.01\n86.326\n\n\n3\n2014\n5,210\n94.196\n86.776\n\n\n4\n2015\n5,580\n94.861\n88.82\n\n\n\n\n\n\n\n\n최저시급과 연도 컬럼 정수형으로 변경\n\n\ntype(df[\"min_wage\"][0])\ntype(df[\"year\"][0])\ndf[\"min_wage\"] = df[\"min_wage\"].str.replace(',',\"\").astype(int) \ndf[\"year\"] = df[\"year\"].astype(int) \ntype(df[\"min_wage\"][0])\ntype(df[\"year\"][0])\n\nnumpy.int64\n\n\n\ndf\n\n\n\n\n\n\n\n\nyear\nmin_wage\ncpi\nfood_cpi\n\n\n\n\n0\n2011\n4320\n89.85\n83.653\n\n\n1\n2012\n4580\n91.815\n85.614\n\n\n2\n2013\n4860\n93.01\n86.326\n\n\n3\n2014\n5210\n94.196\n86.776\n\n\n4\n2015\n5580\n94.861\n88.82\n\n\n5\n2016\n6030\n95.783\n91.158\n\n\n6\n2017\n6470\n97.645\n94.199\n\n\n7\n2018\n7530\n99.086\n96.373\n\n\n8\n2019\n8350\n99.466\n97.161\n\n\n9\n2020\n8590\n100\n100\n\n\n10\n2021\n8720\n102.5\n104.69\n\n\n11\n2022\n9160\n107.72\n111.88\n\n\n12\n2023\n9620\n111.59\n118.16\n\n\n\n\n\n\n\n\n소비자 물가 지수 기준을 2011년으로 변환\n\n\ncpi_coefficent=df['cpi'][0]/df['cpi'][9]\nfood_coefficent=df['food_cpi'][0]/df['food_cpi'][9]\ndf[\"cpi\"] = df[\"cpi\"]/cpi_coefficent\ndf[\"food_cpi\"] = df[\"food_cpi\"]/food_coefficent\ndf.head()\n\n\n\n\n\n\n\n\nyear\nmin_wage\ncpi\nfood_cpi\n\n\n\n\n0\n2011\n4320\n100.0\n100.0\n\n\n1\n2012\n4580\n102.186978\n102.344208\n\n\n2\n2013\n4860\n103.516973\n103.195343\n\n\n3\n2014\n5210\n104.83695\n103.733279\n\n\n4\n2015\n5580\n105.577073\n106.176706\n\n\n\n\n\n\n\n\n인플레이션\n우리가 흔히 알고 있는 인플레이션율이란 물가 상승률로, CPI의 변화율로 측정할 수 있다. 일반적인 국가에선 물가는 지속적으로 상승하기 때문에 인플레이션은 대부분 양수로 나타난다.\n\n\n인플레이션 계산\n\n\ndf[\"inflation\"] = 0.0\n\nfor i in range(1, len(df)):\n    df.loc[i, \"inflation\"] = ((df.loc[i, \"cpi\"] - df.loc[i-1, \"cpi\"])\\\n    /df.loc[i-1, \"cpi\"]) * 100\ndf.head()\n\n\n\n\n\n\n\n\nyear\nmin_wage\ncpi\nfood_cpi\ninflation\n\n\n\n\n0\n2011\n4320\n100.0\n100.0\n0.000000\n\n\n1\n2012\n4580\n102.186978\n102.344208\n2.186978\n\n\n2\n2013\n4860\n103.516973\n103.195343\n1.301530\n\n\n3\n2014\n5210\n104.83695\n103.733279\n1.275132\n\n\n4\n2015\n5580\n105.577073\n106.176706\n0.705975\n\n\n\n\n\n\n\n\n식품 인플레이션 계산\n\n\ndf['food_inflation'] = 0\nfor i in range(1, len(df)):\\\n    df.loc[i, \"food_inflation\"] = ((df.loc[i, \"food_cpi\"] - df.loc[i-1, \"food_cpi\"])\\\n   /df.loc[i-1, \"food_cpi\"]) * 100\ndf['food_inflation'] = df['food_inflation'].fillna(0)\ndf\n\n\n\n\n\n\n\n\nyear\nmin_wage\ncpi\nfood_cpi\ninflation\nfood_inflation\n\n\n\n\n0\n2011\n4320\n100.0\n100.0\n0.000000\n0.000000\n\n\n1\n2012\n4580\n102.186978\n102.344208\n2.186978\n2.344208\n\n\n2\n2013\n4860\n103.516973\n103.195343\n1.301530\n0.831640\n\n\n3\n2014\n5210\n104.83695\n103.733279\n1.275132\n0.521280\n\n\n4\n2015\n5580\n105.577073\n106.176706\n0.705975\n2.355490\n\n\n5\n2016\n6030\n106.603228\n108.971585\n0.971948\n2.632290\n\n\n6\n2017\n6470\n108.67557\n112.60684\n1.943978\n3.335966\n\n\n7\n2018\n7530\n110.279354\n115.205671\n1.475754\n2.307880\n\n\n8\n2019\n8350\n110.702282\n116.147658\n0.383505\n0.817656\n\n\n9\n2020\n8590\n111.296605\n119.541439\n0.536867\n2.921954\n\n\n10\n2021\n8720\n114.079021\n125.147933\n2.500000\n4.690000\n\n\n11\n2022\n9160\n119.888703\n133.742962\n5.092683\n6.867896\n\n\n12\n2023\n9620\n124.195882\n141.250164\n3.592648\n5.613157\n\n\n\n\n\n\n\n\n\n인플레이션, 식품 인플레이션 비교 그래프\n\nplt.clf()\nplt.figure(figsize=(5.5,4))\nsns.lineplot(data=df, x='year', y='food_inflation',color='red' ,label='식품 인플레이션', marker='o')\nsns.lineplot(data=df, x='year', y='inflation',color='dodgerblue',label='총 인플레이션', marker='o')\n# 레이블과 제목 설정\nplt.xlabel('Year',fontsize=16)\nplt.ylabel('Percentage(%)',fontsize=16)\nplt.title('총 인플레이션과 식품 인플레이션의 비교')\nplt.legend()\n# 그래프 표시\nplt.show()\n\n&lt;Figure size 1200x900 with 0 Axes&gt;\n\n\n\n\n\n\n\n\n\n그래프를 통해 식품 인플레이션의 변화율이 크다는 것을 알 수 있다. 식품 부문 인플레이션이 더 크기 때문에 실제 소비자가 체감하는 물가상승률이 더 크다는 점 또한 알 수 있다.\n\n똑같은 최저 시급을 받더라도 인플레이션이 있다면 내가 실제로 받는 시급은 줄어들게 된다. 우리가 실질적으로 받는 최저 시급을 구하기 위해서 인플레이션 조정계수를 구한후 최저 시급에 곱했다. 인플레이션 조정 계수를 곱함으로써 물가의 영향을 제거할 수 있다.\n\n최저시급, 실질 최저시급 상승률\n\n\ninfla_coefficient = np.array(100/df['cpi'])\n\ndf['real_wage'] = df['min_wage'] * infla_coefficient\ndf['real_wage'] = df['real_wage'].astype(int)\n\ndf[\"real_wage_roc\"] = 0\nfor i in range(1, len(df)):\n    df.loc[i, \"real_wage_roc\"] = ((df.loc[i, \"real_wage\"] - df.loc[i-1, \"real_wage\"])\\\n   /df.loc[i-1, \"real_wage\"]) * 100\n\ndf[\"min_wage_roc\"] = 0\nfor i in range(1, len(df)):\n    df.loc[i, \"min_wage_roc\"] = ((df.loc[i, \"min_wage\"] - df.loc[i-1, \"min_wage\"])\\\n   /df.loc[i-1, \"min_wage\"]) * 100\n\ndf = df[['year', 'min_wage','real_wage',\"min_wage_roc\",\"real_wage_roc\",\\\n         'cpi', 'food_cpi', 'inflation', 'food_inflation']]\ndf.head()\n\n\n\n\n\n\n\n\nyear\nmin_wage\nreal_wage\nmin_wage_roc\nreal_wage_roc\ncpi\nfood_cpi\ninflation\nfood_inflation\n\n\n\n\n0\n2011\n4320\n4320\n0.000000\n0.000000\n100.0\n100.0\n0.000000\n0.000000\n\n\n1\n2012\n4580\n4481\n6.018519\n3.726852\n102.186978\n102.344208\n2.186978\n2.344208\n\n\n2\n2013\n4860\n4694\n6.113537\n4.753403\n103.516973\n103.195343\n1.301530\n0.831640\n\n\n3\n2014\n5210\n4969\n7.201646\n5.858543\n104.83695\n103.733279\n1.275132\n0.521280\n\n\n4\n2015\n5580\n5285\n7.101727\n6.359428\n105.577073\n106.176706\n0.705975\n2.355490\n\n\n\n\n\n\n\n\n\n최저시급/ 실질 최저시급 상승률 비교\n\nplt.figure(figsize=(5.5,4))\nsns.lineplot(data=df,x='year',y='min_wage_roc',color='red',label=' 최저시급 변화율',marker='o')\nsns.lineplot(data=df,x='year',y='real_wage_roc',color='dodgerblue',label='실질 최저시급 변화율',marker='o')\n# 레이블과 제목 설정\nplt.xlabel('Year',fontsize=16)\nplt.ylabel('Percentage(%)',fontsize=16)\nplt.ylim(-2, 17)\nplt.grid()\nplt.title('최저시급과 실질 최저시급의 변화율 비교')\nplt.legend()\nplt.show()\n\n\n\n\n\n\n\n\n“실질 최저시급”의 상승률이 모든 연도에서 최저시급의 상승률보다 낮다. 또한 2021 ~ 2022년도 같은 경우 최저 시급이 상승했음에도 실질 최저 시급이 하락했다.\n\n\n\n한국의 최저임금이 OECD의 다른 나라와 비교하면 어떨까? \nOECD 최저시급 데이터가 있지만, 각 나라의 물가를 반영하지 않기 때문에 환율과 구매력 평가(이하 PPP) 데이터를 사용하여 비교했다.\n한국과 다른 나라들의 실질 최저임금을 비교하기 위해 환율과 PPP를 변환 계수로 사용하여 각 나라의 최저시급(달러)에 곱함으로써, 서로 비교할 수 있는 실질 임금 지표를 만들었다. \n\n\nPPP란? \nPPP는 구매력 평가라는 뜻으로, 실질 구매력을 나타내는 지표이다.\n예를 들어, PPP가 800이라면 각 국가의 비교시, 미국에서 1달러를 가지고 살 수 있는 상품을 한국에서 살 때는 실질적으로 800원이 든다는 뜻이다."
+  },
+  {
+    "objectID": "posts/project1/index.html#oecd-국가-별-최저시급",
+    "href": "posts/project1/index.html#oecd-국가-별-최저시급",
+    "title": "최저 임금 데이터 분석",
+    "section": "OECD 국가 별 최저시급",
+    "text": "OECD 국가 별 최저시급\n\n칼럼 확인\n\n\nbefore_frame = pd.read_excel(\"data/최저임금데이터_df.xlsx\")\npath1, path2 = [\"data/PPP원데이터_df.xlsx\",\"data/환율원데이터_df.xlsx\"]\ndf2 = pd.read_excel(path1) \ndf2\n\n\n\n\n\n\n\n\nReference area\nCombined unit of measure\nUnnamed: 2\nUnnamed: 3\n\n\n\n\n0\nAustralia\nNational currency per US dollar, Australian do...\nNaN\n1.391128\n\n\n1\nAustria\nNational currency per US dollar, Euro\nNaN\n0.708583\n\n\n2\nBelgium\nNational currency per US dollar, Euro\nNaN\n0.701943\n\n\n3\nCanada\nNational currency per US dollar, Canadian dollar\nNaN\n1.169928\n\n\n4\nChile\nNational currency per US dollar, Chilean peso\nNaN\n431.415905\n\n\n5\nColombia\nNational currency per US dollar, Colombian peso\nNaN\n1401.241791\n\n\n6\nCosta Rica\nNational currency per US dollar, Costa Rican c...\nNaN\n323.002654\n\n\n7\nCzechia\nNational currency per US dollar, Czech koruna\nNaN\n12.550550\n\n\n8\nDenmark\nNational currency per US dollar, Danish krone\nNaN\n6.106244\n\n\n9\nEstonia\nNational currency per US dollar, Euro\nNaN\n0.562992\n\n\n10\nFinland\nNational currency per US dollar, Euro\nNaN\n0.764142\n\n\n11\nFrance\nNational currency per US dollar, Euro\nNaN\n0.672356\n\n\n12\nGermany\nNational currency per US dollar, Euro\nNaN\n0.703527\n\n\n13\nGreece\nNational currency per US dollar, Euro\nNaN\n0.516235\n\n\n14\nHungary\nNational currency per US dollar, Forint\nNaN\n170.212279\n\n\n15\nIceland\nNational currency per US dollar, Iceland krona\nNaN\n140.155004\n\n\n16\nIreland\nNational currency per US dollar, Euro\nNaN\n0.751366\n\n\n17\nIsrael\nNational currency per US dollar, New Israeli s...\nNaN\n3.586914\n\n\n18\nItaly\nNational currency per US dollar, Euro\nNaN\n0.604018\n\n\n19\nJapan\nNational currency per US dollar, Yen\nNaN\n94.677395\n\n\n20\nKorea\nNational currency per US dollar, Won\nNaN\n800.348017\n\n\n21\nLatvia\nNational currency per US dollar, Euro\nNaN\n0.504500\n\n\n22\nLithuania\nNational currency per US dollar, Euro\nNaN\n0.483176\n\n\n23\nLuxembourg\nNational currency per US dollar, Euro\nNaN\n0.827530\n\n\n24\nMexico\nNational currency per US dollar, Mexican peso\nNaN\n9.659930\n\n\n25\nNetherlands\nNational currency per US dollar, Euro\nNaN\n0.739454\n\n\n26\nNew Zealand\nNational currency per US dollar, New Zealand d...\nNaN\n1.460444\n\n\n27\nNorway\nNational currency per US dollar, Norwegian krone\nNaN\n8.894996\n\n\n28\nPoland\nNational currency per US dollar, Zloty\nNaN\n1.879248\n\n\n29\nPortugal\nNational currency per US dollar, Euro\nNaN\n0.517344\n\n\n30\nSlovak Republic\nNational currency per US dollar, Euro\nNaN\n0.506852\n\n\n31\nSlovenia\nNational currency per US dollar, Euro\nNaN\n0.541355\n\n\n32\nSpain\nNational currency per US dollar, Euro\nNaN\n0.572592\n\n\n33\nSweden\nNational currency per US dollar, Swedish krona\nNaN\n8.509281\n\n\n34\nSwitzerland\nNational currency per US dollar, Swiss franc\nNaN\n0.966273\n\n\n35\nTürkiye\nNational currency per US dollar, Turkish lira\nNaN\n6.974967\n\n\n36\nUnited Kingdom\nNational currency per US dollar, Pound sterling\nNaN\n0.667418\n\n\n37\nUnited States\nNational currency per US dollar, US dollar\nNaN\n1.000000\n\n\n\n\n\n\n\n\n추가 데이터 병합 및 열 지정 (1)\n\n\ndf2.rename(columns = {\"Reference area\":\"country\",\"Unnamed: 3\":\"dollar_ppp\"},inplace=True)\ndf2[\"dollar_ppp\"] = df2[\"dollar_ppp\"].astype(float)\n\nnames = {\n\"United Kingdom\": 'UnitedKingdom', 'Türkiye': 'Turkiye', \"New Zealand\": 'NewZealand'\n}\ndf2['country'] = df2['country'].replace(names)\n\ntemp_frame2 = df2[[\"country\",\"dollar_ppp\"]]     \nbefore_frame = pd.merge(before_frame,temp_frame2,how=\"left\",on=\"country\")\nbefore_frame\n\n\n\n\n\n\n\n\ncountry\nmin_wage\nmin_wage_rank\ndollar_ppp\n\n\n\n\n0\nMexico\n1.1\n28\n9.659930\n\n\n1\nChile\n2.1\n27\n431.415905\n\n\n2\nTurkiye\n2.6\n26\n6.974967\n\n\n3\nLatvia\n3.0\n25\n0.504500\n\n\n4\nHungary\n3.1\n24\n170.212279\n\n\n5\nPoland\n3.9\n22\n1.879248\n\n\n6\nSlovak Republic\n3.9\n22\n0.506852\n\n\n7\nEstonia\n4.1\n19\n0.562992\n\n\n8\nGreece\n4.1\n19\n0.516235\n\n\n9\nCzechia\n4.1\n19\n12.550550\n\n\n10\nLithuania\n4.7\n18\n0.483176\n\n\n11\nPortugal\n5.0\n17\n0.517344\n\n\n12\nSlovenia\n6.5\n16\n0.541355\n\n\n13\nKorea\n7.1\n14\n800.348017\n\n\n14\nJapan\n7.1\n14\n94.677395\n\n\n15\nUnited States\n7.3\n13\n1.000000\n\n\n16\nSpain\n8.2\n12\n0.572592\n\n\n17\nIsrael\n8.6\n11\n3.586914\n\n\n18\nNetherlands\n10.5\n10\n0.739454\n\n\n19\nBelgium\n10.9\n9\n0.701943\n\n\n20\nIreland\n11.1\n7\n0.751366\n\n\n21\nGermany\n11.1\n7\n0.703527\n\n\n22\nCanada\n11.2\n6\n1.169928\n\n\n23\nFrance\n11.4\n5\n0.672356\n\n\n24\nUnitedKingdom\n11.5\n4\n0.667418\n\n\n25\nNewZealand\n13.3\n3\n1.460444\n\n\n26\nLuxembourg\n13.9\n2\n0.827530\n\n\n27\nAustralia\n14.5\n1\n1.391128\n\n\n\n\n\n\n\n\n추가 데이터 병합 및 열 지정 (2)\n\n\ndf3 = pd.read_excel(path2) \ndf3.rename(columns = {\"Reference area\":\"country\",\"Unnamed: 4\":\"exchange_rate\"},inplace=True)\ndf3 = df3[df3['Transaction']==\"Exchange rates, average\"].reset_index(drop=True)\ndf3[\"exchange_rate\"] = df3[\"exchange_rate\"].astype(float)\n\ndf3['country'] = df3['country'].replace(names)\n\ntemp_frame3 = df3[[\"country\",\"exchange_rate\"]]\noecd = pd.merge(before_frame,temp_frame3,how=\"left\",on=\"country\")\noecd.loc[oecd['country'] == 'Turkiye', 'exchange_rate'] = 33.1\noecd.head()\n\n\n\n\n\n\n\n\ncountry\nmin_wage\nmin_wage_rank\ndollar_ppp\nexchange_rate\n\n\n\n\n0\nMexico\n1.1\n28\n9.659930\n17.758717\n\n\n1\nChile\n2.1\n27\n431.415905\n840.066527\n\n\n2\nTurkiye\n2.6\n26\n6.974967\n33.100000\n\n\n3\nLatvia\n3.0\n25\n0.504500\n0.924840\n\n\n4\nHungary\n3.1\n24\n170.212279\n353.088333\n\n\n\n\n\n\n\n\n각 나라의 물가 수준과 환율을 이용하여 달러로 변환한 실질 최저 시급 도출\n\nPPP는 환율과는 달리 물가 수준을 반영하기 때문에, 동일한 금액으로 각국에서 얼마나 많은 상품과 서비스를 구매할 수 있는지를 비교할 수 있다.\n예를 들어, 최저시급을 PPP로 나눴을 땐 실질적으로 상품 몇 개를 살 수 있을지가 나오는데,  -&gt; 최저시급(dollar)에 환율을 곱한 후 PPP로 나눈다면 각국의 실질 구매력을 고려한 임금 비교가 가능하다. \n\n환율/ PPP 열 추가\n\n\noecd[\"coefficient\"] = oecd[\"exchange_rate\"]/oecd[\"dollar_ppp\"]\noecd[\"real_wage\"] = oecd[\"min_wage\"]*oecd[\"coefficient\"]\n\noecd.head()\n\n\n\n\n\n\n\n\ncountry\nmin_wage\nmin_wage_rank\ndollar_ppp\nexchange_rate\ncoefficient\nreal_wage\n\n\n\n\n0\nMexico\n1.1\n28\n9.659930\n17.758717\n1.838390\n2.022229\n\n\n1\nChile\n2.1\n27\n431.415905\n840.066527\n1.947231\n4.089186\n\n\n2\nTurkiye\n2.6\n26\n6.974967\n33.100000\n4.745542\n12.338410\n\n\n3\nLatvia\n3.0\n25\n0.504500\n0.924840\n1.833181\n5.499544\n\n\n4\nHungary\n3.1\n24\n170.212279\n353.088333\n2.074400\n6.430640\n\n\n\n\n\n\n\n * OECD 국가별 최저임금 비교\n\noecd = oecd.sort_values(\"real_wage\",ascending=True).reset_index(drop=True)\nplt.clf()\nplt.figure(figsize=(8,4))\nbar_colors = np.where(oecd[\"country\"]==\"Korea\",\"red\",\"dodgerblue\")\nsns.barplot(data=oecd.sort_values(\"real_wage\",ascending=True), \\\nx='country', y='real_wage', palette=bar_colors)\n\nplt.xticks(rotation=45, fontsize=6)  # 글씨 크기와 회전 각도 조정\nplt.yticks(fontsize=12)\nplt.xlabel('Country',fontsize=14)  # 축 제목 글씨 크기 조정\nplt.ylabel('Real Wage',fontsize=14)  # 축 제목 글씨 크기 조정\nplt.title('OECD 국가별 실질 최저임금', fontsize=20)  # 제목 글씨 크기 조정\nplt.legend()\nplt.show()\n\n&lt;Figure size 1200x900 with 0 Axes&gt;\n\n\n\n\n\n\n\n\n\n\n상대적인 비교를 위해 OECD 실질 임금의 평균을 구하여 그래프에 추가하는 작업을 진행하였다. \n\n\nOECD 평균 임금을 추가한 그래프\n\nmean1 = oecd[\"real_wage\"].mean()\n#country 에 평균 임금을 추가.\nframe = pd.DataFrame({\"country\":'Mean',\"real_wage\":mean1},index=[0])\noecd1 = pd.concat([oecd,frame])\noecd1 = oecd1.sort_values(\"real_wage\",ascending=True).reset_index(drop=True)\n\n\n\n\n\n#Mean,Korea 색 다르게 하기\nbar_colors = np.where(oecd1[\"country\"]==\"Korea\",\"red\",np.where(oecd1[\"country\"]==\"Mean\",\"seagreen\",\"dodgerblue\"))\n\nsns.barplot(data=oecd1.sort_values(\"real_wage\",ascending=True),\\\nx='country', y='real_wage', palette=bar_colors)\n\nplt.xlabel('Country',fontsize=14)  # 축 제목 글씨 크기 조정\nplt.ylabel('Real Wage',fontsize=14)  # 축 제목 글씨 크기 조정\nplt.title('OECD 국가별 실질 최저임금', fontsize=20)  # 제목 글씨 크기 조정\n\n\n\n\n\noecd1[\"country\"]\n\n0              Mexico\n1               Chile\n2              Latvia\n3             Hungary\n4             Estonia\n5     Slovak Republic\n6             Czechia\n7       United States\n8              Greece\n9              Poland\n10             Israel\n11           Portugal\n12          Lithuania\n13               Mean\n14              Japan\n15           Slovenia\n16              Korea\n17            Turkiye\n18             Canada\n19        Netherlands\n20              Spain\n21            Ireland\n22      UnitedKingdom\n23            Belgium\n24            Germany\n25         NewZealand\n26         Luxembourg\n27             France\n28          Australia\nName: country, dtype: object\n\n\n\n\n\n\nshow_country_label = [0,3,7,9,11,13,14,16,18,20,22,24,27]\n\nshow_country = ['Mexico', 'Hungary', 'United States', 'Poland', 'Portugal', 'Mean','Japan', 'Korea', 'Canada', 'Spain',\\\n'United Kingdom', 'Germany', 'France']\n\nplt.xticks(rotation=45, fontsize=10, ticks = show_country_label,labels =show_country )  # 글씨 크기와 회전 각도 조정\nplt.yticks(fontsize=12)\n\nplt.show()"
+  },
+  {
+    "objectID": "posts/project1/index.html#oecd-주요-국가의-평균-실질-임금-그래프",
+    "href": "posts/project1/index.html#oecd-주요-국가의-평균-실질-임금-그래프",
+    "title": "최저 임금 데이터 분석",
+    "section": "OECD 주요 국가의 평균 실질 임금 그래프",
+    "text": "OECD 주요 국가의 평균 실질 임금 그래프\n\nmean1 = oecd[\"real_wage\"].mean()\nframe = pd.DataFrame({\"country\":'Mean',\"real_wage\":mean1},index=[0])\noecd1 = pd.concat([oecd,frame])\noecd1 = oecd1.sort_values(\"real_wage\",ascending=True).reset_index(drop=True)\nplt.figure(figsize=(5.5,4))\n\nbar_colors = np.where(oecd1[\"country\"]==\"Korea\",\"red\",np.where(oecd1[\"country\"]==\"Mean\",\"seagreen\",\"dodgerblue\"))\n\nsns.barplot(data=oecd1.sort_values(\"real_wage\",ascending=True),\\\nx='country', y='real_wage', palette=bar_colors)\n\nplt.xlabel('Country',fontsize=14)  # 축 제목 글씨 크기 조정\nplt.ylabel('Real Wage',fontsize=14)  # 축 제목 글씨 크기 조정\nplt.title('OECD 주요국가별 실질 최저임금', fontsize=20)  # 제목 글씨 크기 조정\nshow_country_label = [0,3,7,9,11,13,14,16,18,20,22,24,27]\n\nshow_country = ['Mexico', 'Hungary', 'United States', 'Poland', 'Portugal', 'Mean','Japan', 'Korea', 'Canada', 'Spain',\\\n'United Kingdom', 'Germany', 'France']\n\nplt.xticks(rotation=45, fontsize=10, ticks = show_country_label,labels =show_country )  # 글씨 크기와 회전 각도 조정\nplt.yticks(fontsize=12)\n\nplt.show()\n\n\n\n\n\n\n\n\n\n우리나라의 실질 최저 임금이 OECD 평균보다 높다는 것으로, 한국의 최저 임금이 타 국가들과 비교해서 높은 편인 것을 알 수 있다."
+  }
+]
